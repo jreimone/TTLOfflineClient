@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="net.reimone.ttloc.model.UserSpiele.presentation.UserSpieleModelWizardID"
+            name="%_UI_UserSpieleModelWizard_label"
+            class="net.reimone.ttloc.model.UserSpiele.presentation.UserSpieleModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/UserSpieleModelFile.gif">
+         <description>%_UI_UserSpieleModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="net.reimone.ttloc.model.UserSpiele.presentation.UserSpieleEditorID"
+            name="%_UI_UserSpieleEditor_label"
+            icon="icons/full/obj16/UserSpieleModelFile.gif"
+            extensions="userspiele"
+            class="net.reimone.ttloc.model.UserSpiele.presentation.UserSpieleEditor"
+            contributorClass="net.reimone.ttloc.model.UserSpiele.presentation.UserSpieleActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" attributeFormDefault="unqualified" elementFormDefault="qualified" version="1.0">
+  <xsd:element name="spielplan" type="spielplanType"/>
+  <xsd:complexType name="spielplanType">
+    <xsd:sequence>
+      <xsd:element maxOccurs="unbounded" name="Spiel" type="SpielType"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="SpielType">
+    <xsd:sequence>
+      <xsd:element name="ID" type="xsd:int"/>
+      <xsd:element name="Staffelname" type="xsd:string"/>
+      <xsd:element name="Nr" type="xsd:string"/>
+      <xsd:element name="Tag" type="xsd:string"/>
+      <xsd:element name="Datum" type="xsd:dateTime"/>
+            <xsd:element name="Heimmannschaft" type="xsd:string"/>
+      <xsd:element name="Gastmannschaft" type="xsd:string"/>
+      <xsd:element name="Ergebnis" type="xsd:string"/>
+      <xsd:element name="Kennzeichnung" type="xsd:string"/>
+      <xsd:element name="Link" type="xsd:string"/>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>
