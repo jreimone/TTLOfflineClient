@@ -12,15 +12,15 @@
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
-            uri="platform:/resource/net.reimone.ttloc.model.usergames/metamodel/usergames.xsd"
-            class="net.reimone.ttloc.model.Usergames.usergamesPackage"
-            genModel="metamodel/usergames.genmodel"/>
+			uri="platform:/resource/net.reimone.ttloc.model.usergames/metamodel/UserSpiele.xsd"
+            class="net.reimone.ttloc.model.UserSpiele.UserSpielePackage"
+            genModel="metamodel/UserSpiele.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <parser
-            type="usergames"
-            class="net.reimone.ttloc.model.Usergames.util.usergamesResourceFactoryImpl"/>
+            type="userspiele"
+            class="net.reimone.ttloc.model.UserSpiele.util.UserSpieleResourceFactoryImpl"/>
    </extension>
 
 </plugin>

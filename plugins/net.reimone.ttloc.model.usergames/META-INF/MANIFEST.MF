@@ -6,12 +6,12 @@ Bundle-Version: 1.0.0.qualifier
 Bundle-ClassPath: .
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
-Export-Package: net.reimone.ttloc.model.Usergames,
- net.reimone.ttloc.model.Usergames.impl,
- net.reimone.ttloc.model.Usergames.util
 Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.emf.ecore.xmi;visibility:=reexport
 Eclipse-LazyStart: true
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Export-Package: net.reimone.ttloc.model.UserSpiele,
+ net.reimone.ttloc.model.UserSpiele.impl,
+ net.reimone.ttloc.model.UserSpiele.util
