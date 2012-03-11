@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<UserSpiele:DocumentRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:UserSpiele="platform:/resource/net.reimone.ttloc.model.usergames/metamodel/UserSpiele.xsd">
+  <spielplan>
+    <spiel staffelname="1. Stadtklasse" datum="2012-03-12" heimmannschaft="SSV Turbine Dresden" gastmannschaft="TTV" ergebnis="15:0" kennzeichnung="" link="sad"/>
+  </spielplan>
+</UserSpiele:DocumentRoot>

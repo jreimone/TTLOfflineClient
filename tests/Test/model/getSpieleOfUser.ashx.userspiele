@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spielplan>   <Spiel>
+       <ID>120413</ID>
+       <Staffelname>Herren - 1. Kreisklasse - Lauenburg</Staffelname>
+       <Nr>119</Nr>
+       <Tag>Mo</Tag>
+       <Datum>2012-02-13T20:00:00.0000000</Datum>
+       <Heimmannschaft>Nusser TSV 2</Heimmannschaft>
+       <Gastmannschaft>Kröppelshagener SV</Gastmannschaft>
+       <Ergebnis/>
+       <Kennzeichnung>Verlegt </Kennzeichnung>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2326&amp;L3=Spielbericht&amp;L3P=120413</Link>
+     </Spiel>
+   <Spiel>
+       <ID>167381</ID>
+       <Staffelname>Bezirksliga - Jugend</Staffelname>
+       <Nr>3075</Nr>
+       <Tag>Sa</Tag>
+       <Datum>2012-02-11T10:00:00.0000000</Datum>
+       <Heimmannschaft>BSC Freiberg</Heimmannschaft>
+       <Gastmannschaft>SV Dresden-Mitte</Gastmannschaft>
+       <Ergebnis>12 : 2</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2709&amp;L3=Spielbericht&amp;L3P=167381</Link>
+     </Spiel>
+   <Spiel>
+       <ID>165288</ID>
+       <Staffelname>Oberliga Herren</Staffelname>
+       <Nr>8063</Nr>
+       <Tag>Sa</Tag>
+       <Datum>2012-02-11T15:00:00.0000000</Datum>
+       <Heimmannschaft>SV Dresden-Mitte</Heimmannschaft>
+       <Gastmannschaft>BSC Freiberg</Gastmannschaft>
+       <Ergebnis>7 : 9</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2636&amp;L3=Spielbericht&amp;L3P=165288</Link>
+     </Spiel>
+   <Spiel>
+       <ID>136362</ID>
+       <Staffelname>Verbandsliga Damen</Staffelname>
+       <Nr>163</Nr>
+       <Tag>Sa</Tag>
+       <Datum>2012-02-11T10:00:00.0000000</Datum>
+       <Heimmannschaft>SG Aufbau Chemnitz</Heimmannschaft>
+       <Gastmannschaft>SV Dresden-Mitte 2</Gastmannschaft>
+       <Ergebnis>3 : 8</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2696&amp;L3=Spielbericht&amp;L3P=136362</Link>
+     </Spiel>
+   <Spiel>
+       <ID>136365</ID>
+       <Staffelname>Verbandsliga Damen</Staffelname>
+       <Nr>166</Nr>
+       <Tag>Sa</Tag>
+       <Datum>2012-02-11T15:00:00.0000000</Datum>
+       <Heimmannschaft>TSV 1888 Falkenau</Heimmannschaft>
+       <Gastmannschaft>SV Dresden-Mitte 2</Gastmannschaft>
+       <Ergebnis>6 : 8</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2696&amp;L3=Spielbericht&amp;L3P=136365</Link>
+     </Spiel>
+   <Spiel>
+       <ID>122869</ID>
+       <Staffelname>Damen - 2. Bezirksliga - Bezirk 4</Staffelname>
+       <Nr>D125</Nr>
+       <Tag>Fr</Tag>
+       <Datum>2012-02-17T20:00:00.0000000</Datum>
+       <Heimmannschaft>ESV Büchen 2</Heimmannschaft>
+       <Gastmannschaft>Nusser TSV 2</Gastmannschaft>
+       <Ergebnis>Vorbericht</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2332&amp;L3=Spielbericht&amp;L3P=122869</Link>
+     </Spiel>
+   <Spiel>
+       <ID>122660</ID>
+       <Staffelname>Herren - 1. Bezirksliga - Bezirk 4</Staffelname>
+       <Nr>C119</Nr>
+       <Tag>Fr</Tag>
+       <Datum>2012-02-10T20:15:00.0000000</Datum>
+       <Heimmannschaft>SSC Hagen Ahrensburg</Heimmannschaft>
+       <Gastmannschaft>TTC Grinau</Gastmannschaft>
+       <Ergebnis>9 : 3</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2333&amp;L3=Spielbericht&amp;L3P=122660</Link>
+     </Spiel>
+   <Spiel>
+       <ID>133519</ID>
+       <Staffelname>4. Stadtklasse, Staffel 2</Staffelname>
+       <Nr>855</Nr>
+       <Tag>Fr</Tag>
+       <Datum>2012-02-17T19:30:00.0000000</Datum>
+       <Heimmannschaft>SV Dresden-Mitte 11</Heimmannschaft>
+       <Gastmannschaft>Hellerau-Klotzsche 7</Gastmannschaft>
+       <Ergebnis>Vorbericht</Ergebnis>
+       <Kennzeichnung>Verlegt </Kennzeichnung>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2717&amp;L3=Spielbericht&amp;L3P=133519</Link>
+     </Spiel>
+   <Spiel>
+       <ID>176706</ID>
+       <Staffelname>C-Gruppe</Staffelname>
+       <Nr>5</Nr>
+       <Tag>Di</Tag>
+       <Datum>2012-02-14T18:00:00.0000000</Datum>
+       <Heimmannschaft>FESTO 5</Heimmannschaft>
+       <Gastmannschaft>Pfisterer</Gastmannschaft>
+       <Ergebnis>Vorbericht</Ergebnis>
+       <Kennzeichnung>Verlegt </Kennzeichnung>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=3052&amp;L3=Spielbericht&amp;L3P=176706</Link>
+     </Spiel>
+   <Spiel>
+       <ID>147547</ID>
+       <Staffelname>2. Bezirksliga - Herren - Staffel 1</Staffelname>
+       <Nr>2180</Nr>
+       <Tag>Sa</Tag>
+       <Datum>2012-02-11T15:00:00.0000000</Datum>
+       <Heimmannschaft>Mot. Mickten-Dresden 2</Heimmannschaft>
+       <Gastmannschaft>SV Dresden-Mitte 5</Gastmannschaft>
+       <Ergebnis>3 : 12</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2702&amp;L3=Spielbericht&amp;L3P=147547</Link>
+     </Spiel>
+   <Spiel>
+       <ID>126264</ID>
+       <Staffelname>Herren - 3. Kreisklasse - Lauenburg</Staffelname>
+       <Nr>H126</Nr>
+       <Tag>Mo</Tag>
+       <Datum>2012-02-13T20:00:00.0000000</Datum>
+       <Heimmannschaft>TTC Grinau 2</Heimmannschaft>
+       <Gastmannschaft>Ratzeburger SV 4</Gastmannschaft>
+       <Ergebnis/>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2327&amp;L3=Spielbericht&amp;L3P=126264</Link>
+     </Spiel>
+   <Spiel>
+       <ID>177636</ID>
+       <Staffelname>Kreisliga Schüler</Staffelname>
+       <Nr>KLS13</Nr>
+       <Tag>Mi</Tag>
+       <Datum>2012-02-22T17:30:00.0000000</Datum>
+       <Heimmannschaft>ESV Büchen</Heimmannschaft>
+       <Gastmannschaft>Nusser TSV</Gastmannschaft>
+       <Ergebnis>Vorbericht</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=3118&amp;L3=Spielbericht&amp;L3P=177636</Link>
+     </Spiel>
+   <Spiel>
+       <ID>176416</ID>
+       <Staffelname>Überregional 2 </Staffelname>
+       <Nr>1</Nr>
+       <Tag>Di</Tag>
+       <Datum>2012-02-14T18:30:00.0000000</Datum>
+       <Heimmannschaft>FESTO</Heimmannschaft>
+       <Gastmannschaft>Alcatel</Gastmannschaft>
+       <Ergebnis>Vorbericht</Ergebnis>
+       <Kennzeichnung>Verlegt </Kennzeichnung>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=3061&amp;L3=Spielbericht&amp;L3P=176416</Link>
+     </Spiel>
+   <Spiel>
+       <ID>177629</ID>
+       <Staffelname>Kreisliga Schüler</Staffelname>
+       <Nr>KLS08</Nr>
+       <Tag>Do</Tag>
+       <Datum>2012-02-09T18:00:00.0000000</Datum>
+       <Heimmannschaft>Kastorfer SV</Heimmannschaft>
+       <Gastmannschaft>Nusser TSV</Gastmannschaft>
+       <Ergebnis>8 : 2</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=3118&amp;L3=Spielbericht&amp;L3P=177629</Link>
+     </Spiel>
+   <Spiel>
+       <ID>132644</ID>
+       <Staffelname>Landesliga Herren, Staffel 1</Staffelname>
+       <Nr>364</Nr>
+       <Tag>Sa</Tag>
+       <Datum>2012-02-11T14:30:00.0000000</Datum>
+       <Heimmannschaft>TTV Dresden 2007</Heimmannschaft>
+       <Gastmannschaft>SV Dresden-Mitte 2</Gastmannschaft>
+       <Ergebnis>6 : 9</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2697&amp;L3=Spielbericht&amp;L3P=132644</Link>
+     </Spiel>
+   <Spiel>
+       <ID>132646</ID>
+       <Staffelname>Landesliga Herren, Staffel 1</Staffelname>
+       <Nr>366</Nr>
+       <Tag>Sa</Tag>
+       <Datum>2012-02-11T19:00:00.0000000</Datum>
+       <Heimmannschaft>TTC Elbe Dresden</Heimmannschaft>
+       <Gastmannschaft>SV Dresden-Mitte 2</Gastmannschaft>
+       <Ergebnis>5 : 10</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2697&amp;L3=Spielbericht&amp;L3P=132646</Link>
+     </Spiel>
+   <Spiel>
+       <ID>133079</ID>
+       <Staffelname>2. Stadtklasse, Staffel 1</Staffelname>
+       <Nr>365</Nr>
+       <Tag>Fr</Tag>
+       <Datum>2012-02-10T19:30:00.0000000</Datum>
+       <Heimmannschaft>SV Dresden-Mitte 9</Heimmannschaft>
+       <Gastmannschaft>SSV Turbine Dresden 2</Gastmannschaft>
+       <Ergebnis>8 : 8</Ergebnis>
+       <Kennzeichnung/>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2712&amp;L3=Spielbericht&amp;L3P=133079</Link>
+     </Spiel>
+   <Spiel>
+       <ID>172729</ID>
+       <Staffelname>Vorgabe-Cup Gr.D</Staffelname>
+       <Nr>1</Nr>
+       <Tag>Mo</Tag>
+       <Datum>2012-02-20T20:00:00.0000000</Datum>
+       <Heimmannschaft>Nusser TSV</Heimmannschaft>
+       <Gastmannschaft>Ratzeburger SV 4</Gastmannschaft>
+       <Ergebnis>Vorbericht</Ergebnis>
+       <Kennzeichnung>Verlegt </Kennzeichnung>
+       <Link>/?L1=Ergebnisse&amp;L2=TTStaffeln&amp;L2P=2560&amp;L3=Spielbericht&amp;L3P=172729</Link>
+     </Spiel>
+</spielplan>
