@@ -35,6 +35,7 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  *   <li>{@link net.reimone.ttloc.model.UserSpiele.impl.SpielTypeImpl#getErgebnis <em>Ergebnis</em>}</li>
  *   <li>{@link net.reimone.ttloc.model.UserSpiele.impl.SpielTypeImpl#getKennzeichnung <em>Kennzeichnung</em>}</li>
  *   <li>{@link net.reimone.ttloc.model.UserSpiele.impl.SpielTypeImpl#getLink <em>Link</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.UserSpiele.impl.SpielTypeImpl#getZeit <em>Zeit</em>}</li>
  * </ul>
  * </p>
  *
@@ -249,6 +250,26 @@ public class SpielTypeImpl extends EObjectImpl implements SpielType {
 	 * @ordered
 	 */
 	protected String link = LINK_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getZeit() <em>Zeit</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getZeit()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String ZEIT_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getZeit() <em>Zeit</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getZeit()
+	 * @generated
+	 * @ordered
+	 */
+	protected String zeit = ZEIT_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -509,6 +530,27 @@ public class SpielTypeImpl extends EObjectImpl implements SpielType {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getZeit() {
+		return zeit;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setZeit(String newZeit) {
+		String oldZeit = zeit;
+		zeit = newZeit;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UserSpielePackage.SPIEL_TYPE__ZEIT, oldZeit, zeit));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -532,6 +574,8 @@ public class SpielTypeImpl extends EObjectImpl implements SpielType {
 				return getKennzeichnung();
 			case UserSpielePackage.SPIEL_TYPE__LINK:
 				return getLink();
+			case UserSpielePackage.SPIEL_TYPE__ZEIT:
+				return getZeit();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -573,6 +617,9 @@ public class SpielTypeImpl extends EObjectImpl implements SpielType {
 				return;
 			case UserSpielePackage.SPIEL_TYPE__LINK:
 				setLink((String)newValue);
+				return;
+			case UserSpielePackage.SPIEL_TYPE__ZEIT:
+				setZeit((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -616,6 +663,9 @@ public class SpielTypeImpl extends EObjectImpl implements SpielType {
 			case UserSpielePackage.SPIEL_TYPE__LINK:
 				setLink(LINK_EDEFAULT);
 				return;
+			case UserSpielePackage.SPIEL_TYPE__ZEIT:
+				setZeit(ZEIT_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -648,6 +698,8 @@ public class SpielTypeImpl extends EObjectImpl implements SpielType {
 				return KENNZEICHNUNG_EDEFAULT == null ? kennzeichnung != null : !KENNZEICHNUNG_EDEFAULT.equals(kennzeichnung);
 			case UserSpielePackage.SPIEL_TYPE__LINK:
 				return LINK_EDEFAULT == null ? link != null : !LINK_EDEFAULT.equals(link);
+			case UserSpielePackage.SPIEL_TYPE__ZEIT:
+				return ZEIT_EDEFAULT == null ? zeit != null : !ZEIT_EDEFAULT.equals(zeit);
 		}
 		return super.eIsSet(featureID);
 	}
@@ -682,6 +734,8 @@ public class SpielTypeImpl extends EObjectImpl implements SpielType {
 		result.append(kennzeichnung);
 		result.append(", link: ");
 		result.append(link);
+		result.append(", zeit: ");
+		result.append(zeit);
 		result.append(')');
 		return result.toString();
 	}

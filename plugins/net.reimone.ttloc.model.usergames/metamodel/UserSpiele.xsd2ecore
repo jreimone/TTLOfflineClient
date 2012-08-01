@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="UserSpiele.xsd#/"
-    outputs="UserSpiele.ecore#/" topToBottom="true">
-  <nested inputs="bundleentry://457.fwk12115695/cache/www.w3.org/2001/XMLSchema.xsd#//int;XSDSimpleTypeDefinition=44"
+<xsd2ecore:XSD2EcoreMappingRoot xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsd2ecore="http://www.eclipse.org/emf/2002/XSD2Ecore" inputs="UserSpiele.xsd#/" outputs="UserSpiele.ecore#/"
+    topToBottom="true">
+  <nested inputs="bundleentry://461.fwk12572745/cache/www.w3.org/2001/XMLSchema.xsd#//int;XSDSimpleTypeDefinition=44"
       outputs="http://www.eclipse.org/emf/2003/XMLType#//Int"/>
-  <nested inputs="bundleentry://457.fwk12115695/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
+  <nested inputs="bundleentry://461.fwk12572745/cache/www.w3.org/2001/XMLSchema.xsd#//string;XSDSimpleTypeDefinition=9"
       outputs="http://www.eclipse.org/emf/2003/XMLType#//String"/>
-  <nested inputs="bundleentry://457.fwk12115695/cache/www.w3.org/2001/XMLSchema.xsd#//dateTime;XSDSimpleTypeDefinition=15"
+  <nested inputs="bundleentry://461.fwk12572745/cache/www.w3.org/2001/XMLSchema.xsd#//dateTime;XSDSimpleTypeDefinition=15"
       outputs="http://www.eclipse.org/emf/2003/XMLType#//DateTime"/>
   <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1" outputs="UserSpiele.ecore#//SpielType">
     <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle"
@@ -20,17 +20,17 @@
     <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=4"
         outputs="UserSpiele.ecore#//SpielType/datum"/>
     <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=5"
-        outputs="UserSpiele.ecore#//SpielType/zeit"/>
-    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=6"
         outputs="UserSpiele.ecore#//SpielType/heimmannschaft"/>
-    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=7"
+    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=6"
         outputs="UserSpiele.ecore#//SpielType/gastmannschaft"/>
-    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=8"
+    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=7"
         outputs="UserSpiele.ecore#//SpielType/ergebnis"/>
-    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=9"
+    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=8"
         outputs="UserSpiele.ecore#//SpielType/kennzeichnung"/>
-    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=10"
+    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=9"
         outputs="UserSpiele.ecore#//SpielType/link"/>
+    <nested inputs="UserSpiele.xsd#//SpielType;XSDComplexTypeDefinition=1/XSDParticle/XSDModelGroup/XSDParticle=10"
+        outputs="UserSpiele.ecore#//SpielType/zeit"/>
   </nested>
   <nested inputs="UserSpiele.xsd#//spielplanType;XSDComplexTypeDefinition" outputs="UserSpiele.ecore#//SpielplanType">
     <nested inputs="UserSpiele.xsd#//spielplanType;XSDComplexTypeDefinition/XSDParticle/XSDModelGroup/XSDParticle"

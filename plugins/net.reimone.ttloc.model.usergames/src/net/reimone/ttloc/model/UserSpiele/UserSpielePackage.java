@@ -244,13 +244,22 @@ public interface UserSpielePackage extends EPackage {
 	int SPIEL_TYPE__LINK = 9;
 
 	/**
+	 * The feature id for the '<em><b>Zeit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int SPIEL_TYPE__ZEIT = 10;
+
+	/**
 	 * The number of structural features of the '<em>Spiel Type</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int SPIEL_TYPE_FEATURE_COUNT = 10;
+	int SPIEL_TYPE_FEATURE_COUNT = 11;
 
 
 	/**
@@ -449,6 +458,17 @@ public interface UserSpielePackage extends EPackage {
 	EAttribute getSpielType_Link();
 
 	/**
+	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.UserSpiele.SpielType#getZeit <em>Zeit</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Zeit</em>'.
+	 * @see net.reimone.ttloc.model.UserSpiele.SpielType#getZeit()
+	 * @see #getSpielType()
+	 * @generated
+	 */
+	EAttribute getSpielType_Zeit();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -619,6 +639,14 @@ public interface UserSpielePackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute SPIEL_TYPE__LINK = eINSTANCE.getSpielType_Link();
+
+		/**
+		 * The meta object literal for the '<em><b>Zeit</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute SPIEL_TYPE__ZEIT = eINSTANCE.getSpielType_Zeit();
 
 	}
 

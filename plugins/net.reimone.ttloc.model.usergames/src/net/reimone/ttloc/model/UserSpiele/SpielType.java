@@ -28,6 +28,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link net.reimone.ttloc.model.UserSpiele.SpielType#getErgebnis <em>Ergebnis</em>}</li>
  *   <li>{@link net.reimone.ttloc.model.UserSpiele.SpielType#getKennzeichnung <em>Kennzeichnung</em>}</li>
  *   <li>{@link net.reimone.ttloc.model.UserSpiele.SpielType#getLink <em>Link</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.UserSpiele.SpielType#getZeit <em>Zeit</em>}</li>
  * </ul>
  * </p>
  *
@@ -332,5 +333,32 @@ public interface SpielType extends EObject {
 	 * @generated
 	 */
 	void setLink(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Zeit</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Zeit</em>' attribute isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Zeit</em>' attribute.
+	 * @see #setZeit(String)
+	 * @see net.reimone.ttloc.model.UserSpiele.UserSpielePackage#getSpielType_Zeit()
+	 * @model dataType="org.eclipse.emf.ecore.xml.type.String" required="true"
+	 *        extendedMetaData="kind='element' name='Zeit' namespace='##targetNamespace'"
+	 * @generated
+	 */
+	String getZeit();
+
+	/**
+	 * Sets the value of the '{@link net.reimone.ttloc.model.UserSpiele.SpielType#getZeit <em>Zeit</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Zeit</em>' attribute.
+	 * @see #getZeit()
+	 * @generated
+	 */
+	void setZeit(String value);
 
 } // SpielType

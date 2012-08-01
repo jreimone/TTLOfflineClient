@@ -76,6 +76,7 @@ public class SpielTypeItemProvider
 			addErgebnisPropertyDescriptor(object);
 			addKennzeichnungPropertyDescriptor(object);
 			addLinkPropertyDescriptor(object);
+			addZeitPropertyDescriptor(object);
 		}
 		return itemPropertyDescriptors;
 	}
@@ -301,6 +302,28 @@ public class SpielTypeItemProvider
 	}
 
 	/**
+	 * This adds a property descriptor for the Zeit feature.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	protected void addZeitPropertyDescriptor(Object object) {
+		itemPropertyDescriptors.add
+			(createItemPropertyDescriptor
+				(((ComposeableAdapterFactory)adapterFactory).getRootAdapterFactory(),
+				 getResourceLocator(),
+				 getString("_UI_SpielType_zeit_feature"),
+				 getString("_UI_PropertyDescriptor_description", "_UI_SpielType_zeit_feature", "_UI_SpielType_type"),
+				 UserSpielePackage.Literals.SPIEL_TYPE__ZEIT,
+				 true,
+				 false,
+				 false,
+				 ItemPropertyDescriptor.GENERIC_VALUE_IMAGE,
+				 null,
+				 null));
+	}
+
+	/**
 	 * This returns SpielType.gif.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -345,6 +368,7 @@ public class SpielTypeItemProvider
 			case UserSpielePackage.SPIEL_TYPE__ERGEBNIS:
 			case UserSpielePackage.SPIEL_TYPE__KENNZEICHNUNG:
 			case UserSpielePackage.SPIEL_TYPE__LINK:
+			case UserSpielePackage.SPIEL_TYPE__ZEIT:
 				fireNotifyChanged(new ViewerNotification(notification, notification.getNotifier(), false, true));
 				return;
 		}

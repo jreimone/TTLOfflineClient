@@ -280,6 +280,15 @@ public class UserSpielePackageImpl extends EPackageImpl implements UserSpielePac
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EAttribute getSpielType_Zeit() {
+		return (EAttribute)spielTypeEClass.getEStructuralFeatures().get(10);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public UserSpieleFactory getUserSpieleFactory() {
 		return (UserSpieleFactory)getEFactoryInstance();
 	}
@@ -323,6 +332,7 @@ public class UserSpielePackageImpl extends EPackageImpl implements UserSpielePac
 		createEAttribute(spielTypeEClass, SPIEL_TYPE__ERGEBNIS);
 		createEAttribute(spielTypeEClass, SPIEL_TYPE__KENNZEICHNUNG);
 		createEAttribute(spielTypeEClass, SPIEL_TYPE__LINK);
+		createEAttribute(spielTypeEClass, SPIEL_TYPE__ZEIT);
 	}
 
 	/**
@@ -378,6 +388,7 @@ public class UserSpielePackageImpl extends EPackageImpl implements UserSpielePac
 		initEAttribute(getSpielType_Ergebnis(), theXMLTypePackage.getString(), "ergebnis", null, 1, 1, SpielType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSpielType_Kennzeichnung(), theXMLTypePackage.getString(), "kennzeichnung", null, 1, 1, SpielType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getSpielType_Link(), theXMLTypePackage.getString(), "link", null, 1, 1, SpielType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEAttribute(getSpielType_Zeit(), theXMLTypePackage.getString(), "zeit", null, 1, 1, SpielType.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);
@@ -537,6 +548,14 @@ public class UserSpielePackageImpl extends EPackageImpl implements UserSpielePac
 		   new String[] {
 			 "kind", "element",
 			 "name", "Link",
+			 "namespace", "##targetNamespace"
+		   });		
+		addAnnotation
+		  (getSpielType_Zeit(), 
+		   source, 
+		   new String[] {
+			 "kind", "element",
+			 "name", "Zeit",
 			 "namespace", "##targetNamespace"
 		   });
 	}

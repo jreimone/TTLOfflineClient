@@ -18,6 +18,7 @@
       <xsd:element name="Ergebnis" type="xsd:string"/>
       <xsd:element name="Kennzeichnung" type="xsd:string"/>
       <xsd:element name="Link" type="xsd:string"/>
-    </xsd:sequence>
+                <xsd:element name="Zeit" type="xsd:string"/>
+        </xsd:sequence>
   </xsd:complexType>
 </xsd:schema>
