@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_mPbhYNygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ide.application" bindingContexts="_mPcIcNygEeG1pPPwTpINKg">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_mPcIhtygEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.window" label="Tischtennis Live Offlince Client" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/tt.gif" width="500" height="400">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_mPcvh9ygEeG1pPPwTpINKg">
+      <children xsi:type="advanced:Perspective" xmi:id="_mPcviNygEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.perspective" label="TTLOC Perspective" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/tt.gif">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_mPcvidygEeG1pPPwTpINKg" horizontal="true">
+          <children xsi:type="basic:PartStack" xmi:id="_mPcvitygEeG1pPPwTpINKg">
+            <children xsi:type="basic:Part" xmi:id="_BR4dQNywEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.usergames" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.parts.UserGamesPart" label="Spiele des Benutzers" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/tt_user.png"/>
+          </children>
+          <children xsi:type="basic:PartSashContainer" xmi:id="_6WYDsNyvEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.partsashcontainer.0">
+            <children xsi:type="basic:PartStack" xmi:id="_8RTfUNyvEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.partstack.0">
+              <children xsi:type="basic:Part" xmi:id="_H6GucNywEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.gamedetails" label="Details des Spiels" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/tt_magnifier.png"/>
+            </children>
+            <children xsi:type="basic:PartStack" xmi:id="_8ym1kNyvEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.partstack.0">
+              <children xsi:type="basic:Part" xmi:id="_Rr0DoNyxEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.additional" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.parts.AdditionalPart"/>
+            </children>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_mPcvgNygEeG1pPPwTpINKg" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_mPcvgdygEeG1pPPwTpINKg" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mPcvgtygEeG1pPPwTpINKg" label="Open" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/sample.gif" command="_mPcIfdygEeG1pPPwTpINKg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mPcvg9ygEeG1pPPwTpINKg" label="Save" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/save_edit.gif" command="_mPcIgNygEeG1pPPwTpINKg"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mPcvhNygEeG1pPPwTpINKg" label="Quit" command="_mPcIedygEeG1pPPwTpINKg"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_mPcvhdygEeG1pPPwTpINKg" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_mPcvhtygEeG1pPPwTpINKg" label="About" command="_mPcIg9ygEeG1pPPwTpINKg"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_mPcvi9ygEeG1pPPwTpINKg">
+      <children xsi:type="menu:ToolBar" xmi:id="_mPcvjNygEeG1pPPwTpINKg" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mPcvjdygEeG1pPPwTpINKg" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/sample.gif" command="_mPcIfdygEeG1pPPwTpINKg"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_mPcvjtygEeG1pPPwTpINKg" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/save_edit.gif" command="_mPcIgNygEeG1pPPwTpINKg"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_mPcIetygEeG1pPPwTpINKg" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.handlers.QuitHandler" command="_mPcIedygEeG1pPPwTpINKg"/>
+  <handlers xmi:id="_mPcIftygEeG1pPPwTpINKg" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.handlers.OpenHandler" command="_mPcIfdygEeG1pPPwTpINKg"/>
+  <handlers xmi:id="_mPcIgdygEeG1pPPwTpINKg" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.handlers.SaveHandler" command="_mPcIgNygEeG1pPPwTpINKg"/>
+  <handlers xmi:id="_mPcIhNygEeG1pPPwTpINKg" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.handlers.AboutHandler" command="_mPcIg9ygEeG1pPPwTpINKg"/>
+  <bindingTables xmi:id="_mPcIe9ygEeG1pPPwTpINKg" bindingContext="_mPcIcNygEeG1pPPwTpINKg">
+    <bindings xmi:id="_mPcIfNygEeG1pPPwTpINKg" keySequence="M1+Q" command="_mPcIedygEeG1pPPwTpINKg"/>
+    <bindings xmi:id="_mPcIf9ygEeG1pPPwTpINKg" keySequence="M1+O" command="_mPcIfdygEeG1pPPwTpINKg"/>
+    <bindings xmi:id="_mPcIgtygEeG1pPPwTpINKg" keySequence="M1+S" command="_mPcIgNygEeG1pPPwTpINKg"/>
+    <bindings xmi:id="_mPcIhdygEeG1pPPwTpINKg" keySequence="M1+A" command="_mPcIg9ygEeG1pPPwTpINKg"/>
+  </bindingTables>
+  <rootContext xmi:id="_mPcIcNygEeG1pPPwTpINKg" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_mPcIcdygEeG1pPPwTpINKg" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_mPcIctygEeG1pPPwTpINKg" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_mPcIedygEeG1pPPwTpINKg" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_mPcIfdygEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.open" commandName="openCommand"/>
+  <commands xmi:id="_mPcIgNygEeG1pPPwTpINKg" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_mPcIg9ygEeG1pPPwTpINKg" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <addons xmi:id="_mPcIc9ygEeG1pPPwTpINKg" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_mPcIdNygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_mPcIddygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_mPcIdtygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_mPcId9ygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_mPcIeNygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+  <addons xmi:id="_WK3SwNy6EeG5rutO_sZyCA" elementId="net.reimone.ttloc.application.initialisation" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.ApplicationInitialisation"/>
+</application:Application>
