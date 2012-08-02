@@ -1,8 +1,8 @@
 /**
  */
-package net.reimone.ttloc.model.application.util;
+package net.reimone.ttloc.model.ttloc.util;
 
-import net.reimone.ttloc.model.application.*;
+import net.reimone.ttloc.model.ttloc.*;
 
 import org.eclipse.emf.common.notify.Adapter;
 import org.eclipse.emf.common.notify.Notifier;
@@ -16,17 +16,17 @@ import org.eclipse.emf.ecore.EObject;
  * The <b>Adapter Factory</b> for the model.
  * It provides an adapter <code>createXXX</code> method for each class of the model.
  * <!-- end-user-doc -->
- * @see net.reimone.ttloc.model.application.ApplicationPackage
+ * @see net.reimone.ttloc.model.ttloc.TtlocPackage
  * @generated
  */
-public class ApplicationAdapterFactory extends AdapterFactoryImpl {
+public class TtlocAdapterFactory extends AdapterFactoryImpl {
 	/**
 	 * The cached model package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static ApplicationPackage modelPackage;
+	protected static TtlocPackage modelPackage;
 
 	/**
 	 * Creates an instance of the adapter factory.
@@ -34,9 +34,9 @@ public class ApplicationAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ApplicationAdapterFactory() {
+	public TtlocAdapterFactory() {
 		if (modelPackage == null) {
-			modelPackage = ApplicationPackage.eINSTANCE;
+			modelPackage = TtlocPackage.eINSTANCE;
 		}
 	}
 
@@ -65,8 +65,8 @@ public class ApplicationAdapterFactory extends AdapterFactoryImpl {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected ApplicationSwitch<Adapter> modelSwitch =
-		new ApplicationSwitch<Adapter>() {
+	protected TtlocSwitch<Adapter> modelSwitch =
+		new TtlocSwitch<Adapter>() {
 			@Override
 			public Adapter caseTTLOCApplication(TTLOCApplication object) {
 				return createTTLOCApplicationAdapter();
@@ -96,13 +96,13 @@ public class ApplicationAdapterFactory extends AdapterFactoryImpl {
 
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.reimone.ttloc.model.application.TTLOCApplication <em>TTLOC Application</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication <em>TTLOC Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.reimone.ttloc.model.application.TTLOCApplication
+	 * @see net.reimone.ttloc.model.ttloc.TTLOCApplication
 	 * @generated
 	 */
 	public Adapter createTTLOCApplicationAdapter() {
@@ -110,13 +110,13 @@ public class ApplicationAdapterFactory extends AdapterFactoryImpl {
 	}
 
 	/**
-	 * Creates a new adapter for an object of class '{@link net.reimone.ttloc.model.application.User <em>User</em>}'.
+	 * Creates a new adapter for an object of class '{@link net.reimone.ttloc.model.ttloc.User <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * This default implementation returns null so that we can easily ignore cases;
 	 * it's useful to ignore a case when inheritance will catch all the cases anyway.
 	 * <!-- end-user-doc -->
 	 * @return the new adapter.
-	 * @see net.reimone.ttloc.model.application.User
+	 * @see net.reimone.ttloc.model.ttloc.User
 	 * @generated
 	 */
 	public Adapter createUserAdapter() {
@@ -135,4 +135,4 @@ public class ApplicationAdapterFactory extends AdapterFactoryImpl {
 		return null;
 	}
 
-} //ApplicationAdapterFactory
+} //TtlocAdapterFactory

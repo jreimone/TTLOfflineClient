@@ -1,8 +1,8 @@
 /**
  */
-package net.reimone.ttloc.model.application.util;
+package net.reimone.ttloc.model.ttloc.util;
 
-import net.reimone.ttloc.model.application.*;
+import net.reimone.ttloc.model.ttloc.*;
 
 import org.eclipse.emf.ecore.EObject;
 import org.eclipse.emf.ecore.EPackage;
@@ -19,17 +19,17 @@ import org.eclipse.emf.ecore.util.Switch;
  * until a non-null result is returned,
  * which is the result of the switch.
  * <!-- end-user-doc -->
- * @see net.reimone.ttloc.model.application.ApplicationPackage
+ * @see net.reimone.ttloc.model.ttloc.TtlocPackage
  * @generated
  */
-public class ApplicationSwitch<T> extends Switch<T> {
+public class TtlocSwitch<T> extends Switch<T> {
 	/**
 	 * The cached model package
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	protected static ApplicationPackage modelPackage;
+	protected static TtlocPackage modelPackage;
 
 	/**
 	 * Creates an instance of the switch.
@@ -37,9 +37,9 @@ public class ApplicationSwitch<T> extends Switch<T> {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ApplicationSwitch() {
+	public TtlocSwitch() {
 		if (modelPackage == null) {
-			modelPackage = ApplicationPackage.eINSTANCE;
+			modelPackage = TtlocPackage.eINSTANCE;
 		}
 	}
 
@@ -66,13 +66,13 @@ public class ApplicationSwitch<T> extends Switch<T> {
 	@Override
 	protected T doSwitch(int classifierID, EObject theEObject) {
 		switch (classifierID) {
-			case ApplicationPackage.TTLOC_APPLICATION: {
+			case TtlocPackage.TTLOC_APPLICATION: {
 				TTLOCApplication ttlocApplication = (TTLOCApplication)theEObject;
 				T result = caseTTLOCApplication(ttlocApplication);
 				if (result == null) result = defaultCase(theEObject);
 				return result;
 			}
-			case ApplicationPackage.USER: {
+			case TtlocPackage.USER: {
 				User user = (User)theEObject;
 				T result = caseUser(user);
 				if (result == null) result = defaultCase(theEObject);
@@ -128,4 +128,4 @@ public class ApplicationSwitch<T> extends Switch<T> {
 		return null;
 	}
 
-} //ApplicationSwitch
+} //TtlocSwitch

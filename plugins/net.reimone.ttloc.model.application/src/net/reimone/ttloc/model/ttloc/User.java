@@ -1,10 +1,11 @@
 /**
  */
-package net.reimone.ttloc.model.application;
+package net.reimone.ttloc.model.ttloc;
 
 import net.reimone.ttloc.model.UserSpiele.SpielType;
 
 import org.eclipse.emf.common.util.EList;
+
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -15,14 +16,14 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link net.reimone.ttloc.model.application.User#getName <em>Name</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.User#getPassword <em>Password</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.User#getId <em>Id</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.User#getGames <em>Games</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.User#getName <em>Name</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.User#getPassword <em>Password</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.User#getId <em>Id</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.User#getGames <em>Games</em>}</li>
  * </ul>
  * </p>
  *
- * @see net.reimone.ttloc.model.application.ApplicationPackage#getUser()
+ * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getUser()
  * @model
  * @generated
  */
@@ -37,14 +38,14 @@ public interface User extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Name</em>' attribute.
 	 * @see #setName(String)
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getUser_Name()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getUser_Name()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getName();
 
 	/**
-	 * Sets the value of the '{@link net.reimone.ttloc.model.application.User#getName <em>Name</em>}' attribute.
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.User#getName <em>Name</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Name</em>' attribute.
@@ -63,14 +64,14 @@ public interface User extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Password</em>' attribute.
 	 * @see #setPassword(String)
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getUser_Password()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getUser_Password()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getPassword();
 
 	/**
-	 * Sets the value of the '{@link net.reimone.ttloc.model.application.User#getPassword <em>Password</em>}' attribute.
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.User#getPassword <em>Password</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Password</em>' attribute.
@@ -89,14 +90,14 @@ public interface User extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Id</em>' attribute.
 	 * @see #setId(String)
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getUser_Id()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getUser_Id()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getId();
 
 	/**
-	 * Sets the value of the '{@link net.reimone.ttloc.model.application.User#getId <em>Id</em>}' attribute.
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.User#getId <em>Id</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Id</em>' attribute.
@@ -115,7 +116,7 @@ public interface User extends EObject {
 	 * </p>
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Games</em>' reference list.
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getUser_Games()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getUser_Games()
 	 * @model
 	 * @generated
 	 */

@@ -1,13 +1,13 @@
 /**
  */
-package net.reimone.ttloc.model.application.impl;
+package net.reimone.ttloc.model.ttloc.impl;
 
 import net.reimone.ttloc.model.UserSpiele.UserSpielePackage;
 
-import net.reimone.ttloc.model.application.ApplicationFactory;
-import net.reimone.ttloc.model.application.ApplicationPackage;
-import net.reimone.ttloc.model.application.TTLOCApplication;
-import net.reimone.ttloc.model.application.User;
+import net.reimone.ttloc.model.ttloc.TTLOCApplication;
+import net.reimone.ttloc.model.ttloc.TtlocFactory;
+import net.reimone.ttloc.model.ttloc.TtlocPackage;
+import net.reimone.ttloc.model.ttloc.User;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -22,7 +22,7 @@ import org.eclipse.emf.ecore.impl.EPackageImpl;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ApplicationPackageImpl extends EPackageImpl implements ApplicationPackage {
+public class TtlocPackageImpl extends EPackageImpl implements TtlocPackage {
 	/**
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -48,12 +48,12 @@ public class ApplicationPackageImpl extends EPackageImpl implements ApplicationP
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @see org.eclipse.emf.ecore.EPackage.Registry
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#eNS_URI
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#eNS_URI
 	 * @see #init()
 	 * @generated
 	 */
-	private ApplicationPackageImpl() {
-		super(eNS_URI, ApplicationFactory.eINSTANCE);
+	private TtlocPackageImpl() {
+		super(eNS_URI, TtlocFactory.eINSTANCE);
 	}
 
 	/**
@@ -66,7 +66,7 @@ public class ApplicationPackageImpl extends EPackageImpl implements ApplicationP
 	/**
 	 * Creates, registers, and initializes the <b>Package</b> for this model, and for any others upon which it depends.
 	 * 
-	 * <p>This method is used to initialize {@link ApplicationPackage#eINSTANCE} when that field is accessed.
+	 * <p>This method is used to initialize {@link TtlocPackage#eINSTANCE} when that field is accessed.
 	 * Clients should not invoke it directly. Instead, they should simply access that field to obtain the package.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -75,11 +75,11 @@ public class ApplicationPackageImpl extends EPackageImpl implements ApplicationP
 	 * @see #initializePackageContents()
 	 * @generated
 	 */
-	public static ApplicationPackage init() {
-		if (isInited) return (ApplicationPackage)EPackage.Registry.INSTANCE.getEPackage(ApplicationPackage.eNS_URI);
+	public static TtlocPackage init() {
+		if (isInited) return (TtlocPackage)EPackage.Registry.INSTANCE.getEPackage(TtlocPackage.eNS_URI);
 
 		// Obtain or create and register package
-		ApplicationPackageImpl theApplicationPackage = (ApplicationPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof ApplicationPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new ApplicationPackageImpl());
+		TtlocPackageImpl theTtlocPackage = (TtlocPackageImpl)(EPackage.Registry.INSTANCE.get(eNS_URI) instanceof TtlocPackageImpl ? EPackage.Registry.INSTANCE.get(eNS_URI) : new TtlocPackageImpl());
 
 		isInited = true;
 
@@ -87,18 +87,18 @@ public class ApplicationPackageImpl extends EPackageImpl implements ApplicationP
 		UserSpielePackage.eINSTANCE.eClass();
 
 		// Create package meta-data objects
-		theApplicationPackage.createPackageContents();
+		theTtlocPackage.createPackageContents();
 
 		// Initialize created meta-data
-		theApplicationPackage.initializePackageContents();
+		theTtlocPackage.initializePackageContents();
 
 		// Mark meta-data to indicate it can't be changed
-		theApplicationPackage.freeze();
+		theTtlocPackage.freeze();
 
   
 		// Update the registry and return the package
-		EPackage.Registry.INSTANCE.put(ApplicationPackage.eNS_URI, theApplicationPackage);
-		return theApplicationPackage;
+		EPackage.Registry.INSTANCE.put(TtlocPackage.eNS_URI, theTtlocPackage);
+		return theTtlocPackage;
 	}
 
 	/**
@@ -196,8 +196,8 @@ public class ApplicationPackageImpl extends EPackageImpl implements ApplicationP
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ApplicationFactory getApplicationFactory() {
-		return (ApplicationFactory)getEFactoryInstance();
+	public TtlocFactory getTtlocFactory() {
+		return (TtlocFactory)getEFactoryInstance();
 	}
 
 	/**
@@ -281,4 +281,4 @@ public class ApplicationPackageImpl extends EPackageImpl implements ApplicationP
 		createResource(eNS_URI);
 	}
 
-} //ApplicationPackageImpl
+} //TtlocPackageImpl

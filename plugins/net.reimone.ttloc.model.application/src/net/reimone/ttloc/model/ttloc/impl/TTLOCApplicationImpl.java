@@ -1,10 +1,10 @@
 /**
  */
-package net.reimone.ttloc.model.application.impl;
+package net.reimone.ttloc.model.ttloc.impl;
 
-import net.reimone.ttloc.model.application.ApplicationPackage;
-import net.reimone.ttloc.model.application.TTLOCApplication;
-import net.reimone.ttloc.model.application.User;
+import net.reimone.ttloc.model.ttloc.TTLOCApplication;
+import net.reimone.ttloc.model.ttloc.TtlocPackage;
+import net.reimone.ttloc.model.ttloc.User;
 
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
@@ -22,10 +22,10 @@ import org.eclipse.emf.ecore.impl.EObjectImpl;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl#getUser <em>User</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl#getBaseURL <em>Base URL</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl#getGamesOfUserURL <em>Games Of User URL</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl#getGameReportURL <em>Game Report URL</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl#getUser <em>User</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl#getBaseURL <em>Base URL</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl#getGamesOfUserURL <em>Games Of User URL</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl#getGameReportURL <em>Game Report URL</em>}</li>
  * </ul>
  * </p>
  *
@@ -118,7 +118,7 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ApplicationPackage.Literals.TTLOC_APPLICATION;
+		return TtlocPackage.Literals.TTLOC_APPLICATION;
 	}
 
 	/**
@@ -139,7 +139,7 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 		User oldUser = user;
 		user = newUser;
 		if (eNotificationRequired()) {
-			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, ApplicationPackage.TTLOC_APPLICATION__USER, oldUser, newUser);
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, TtlocPackage.TTLOC_APPLICATION__USER, oldUser, newUser);
 			if (msgs == null) msgs = notification; else msgs.add(notification);
 		}
 		return msgs;
@@ -154,14 +154,14 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 		if (newUser != user) {
 			NotificationChain msgs = null;
 			if (user != null)
-				msgs = ((InternalEObject)user).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - ApplicationPackage.TTLOC_APPLICATION__USER, null, msgs);
+				msgs = ((InternalEObject)user).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - TtlocPackage.TTLOC_APPLICATION__USER, null, msgs);
 			if (newUser != null)
-				msgs = ((InternalEObject)newUser).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - ApplicationPackage.TTLOC_APPLICATION__USER, null, msgs);
+				msgs = ((InternalEObject)newUser).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - TtlocPackage.TTLOC_APPLICATION__USER, null, msgs);
 			msgs = basicSetUser(newUser, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
 		else if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationPackage.TTLOC_APPLICATION__USER, newUser, newUser));
+			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.TTLOC_APPLICATION__USER, newUser, newUser));
 	}
 
 	/**
@@ -182,7 +182,7 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 		String oldBaseURL = baseURL;
 		baseURL = newBaseURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationPackage.TTLOC_APPLICATION__BASE_URL, oldBaseURL, baseURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.TTLOC_APPLICATION__BASE_URL, oldBaseURL, baseURL));
 	}
 
 	/**
@@ -203,7 +203,7 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 		String oldGamesOfUserURL = gamesOfUserURL;
 		gamesOfUserURL = newGamesOfUserURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL, oldGamesOfUserURL, gamesOfUserURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL, oldGamesOfUserURL, gamesOfUserURL));
 	}
 
 	/**
@@ -224,7 +224,7 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 		String oldGameReportURL = gameReportURL;
 		gameReportURL = newGameReportURL;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationPackage.TTLOC_APPLICATION__GAME_REPORT_URL, oldGameReportURL, gameReportURL));
+			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.TTLOC_APPLICATION__GAME_REPORT_URL, oldGameReportURL, gameReportURL));
 	}
 
 	/**
@@ -235,7 +235,7 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
-			case ApplicationPackage.TTLOC_APPLICATION__USER:
+			case TtlocPackage.TTLOC_APPLICATION__USER:
 				return basicSetUser(null, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
@@ -249,13 +249,13 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ApplicationPackage.TTLOC_APPLICATION__USER:
+			case TtlocPackage.TTLOC_APPLICATION__USER:
 				return getUser();
-			case ApplicationPackage.TTLOC_APPLICATION__BASE_URL:
+			case TtlocPackage.TTLOC_APPLICATION__BASE_URL:
 				return getBaseURL();
-			case ApplicationPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
 				return getGamesOfUserURL();
-			case ApplicationPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
 				return getGameReportURL();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -269,16 +269,16 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ApplicationPackage.TTLOC_APPLICATION__USER:
+			case TtlocPackage.TTLOC_APPLICATION__USER:
 				setUser((User)newValue);
 				return;
-			case ApplicationPackage.TTLOC_APPLICATION__BASE_URL:
+			case TtlocPackage.TTLOC_APPLICATION__BASE_URL:
 				setBaseURL((String)newValue);
 				return;
-			case ApplicationPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
 				setGamesOfUserURL((String)newValue);
 				return;
-			case ApplicationPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
 				setGameReportURL((String)newValue);
 				return;
 		}
@@ -293,16 +293,16 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ApplicationPackage.TTLOC_APPLICATION__USER:
+			case TtlocPackage.TTLOC_APPLICATION__USER:
 				setUser((User)null);
 				return;
-			case ApplicationPackage.TTLOC_APPLICATION__BASE_URL:
+			case TtlocPackage.TTLOC_APPLICATION__BASE_URL:
 				setBaseURL(BASE_URL_EDEFAULT);
 				return;
-			case ApplicationPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
 				setGamesOfUserURL(GAMES_OF_USER_URL_EDEFAULT);
 				return;
-			case ApplicationPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
 				setGameReportURL(GAME_REPORT_URL_EDEFAULT);
 				return;
 		}
@@ -317,13 +317,13 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ApplicationPackage.TTLOC_APPLICATION__USER:
+			case TtlocPackage.TTLOC_APPLICATION__USER:
 				return user != null;
-			case ApplicationPackage.TTLOC_APPLICATION__BASE_URL:
+			case TtlocPackage.TTLOC_APPLICATION__BASE_URL:
 				return BASE_URL_EDEFAULT == null ? baseURL != null : !BASE_URL_EDEFAULT.equals(baseURL);
-			case ApplicationPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAMES_OF_USER_URL:
 				return GAMES_OF_USER_URL_EDEFAULT == null ? gamesOfUserURL != null : !GAMES_OF_USER_URL_EDEFAULT.equals(gamesOfUserURL);
-			case ApplicationPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
+			case TtlocPackage.TTLOC_APPLICATION__GAME_REPORT_URL:
 				return GAME_REPORT_URL_EDEFAULT == null ? gameReportURL != null : !GAME_REPORT_URL_EDEFAULT.equals(gameReportURL);
 		}
 		return super.eIsSet(featureID);

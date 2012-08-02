@@ -12,3 +12,6 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.emf.ecore.xmi;visibility:=reexport,
  net.reimone.ttloc.model.usergames;visibility:=reexport
 Bundle-ActivationPolicy: lazy
+Export-Package: net.reimone.ttloc.model.ttloc,
+ net.reimone.ttloc.model.ttloc.impl,
+ net.reimone.ttloc.model.ttloc.util

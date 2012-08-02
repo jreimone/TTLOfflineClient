@@ -1,6 +1,6 @@
 /**
  */
-package net.reimone.ttloc.model.application;
+package net.reimone.ttloc.model.ttloc;
 
 import org.eclipse.emf.ecore.EObject;
 
@@ -12,14 +12,14 @@ import org.eclipse.emf.ecore.EObject;
  * <p>
  * The following features are supported:
  * <ul>
- *   <li>{@link net.reimone.ttloc.model.application.TTLOCApplication#getUser <em>User</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.TTLOCApplication#getBaseURL <em>Base URL</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.TTLOCApplication#getGamesOfUserURL <em>Games Of User URL</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.TTLOCApplication#getGameReportURL <em>Game Report URL</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getUser <em>User</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getBaseURL <em>Base URL</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getGamesOfUserURL <em>Games Of User URL</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getGameReportURL <em>Game Report URL</em>}</li>
  * </ul>
  * </p>
  *
- * @see net.reimone.ttloc.model.application.ApplicationPackage#getTTLOCApplication()
+ * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getTTLOCApplication()
  * @model
  * @generated
  */
@@ -34,14 +34,14 @@ public interface TTLOCApplication extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>User</em>' containment reference.
 	 * @see #setUser(User)
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getTTLOCApplication_User()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getTTLOCApplication_User()
 	 * @model containment="true"
 	 * @generated
 	 */
 	User getUser();
 
 	/**
-	 * Sets the value of the '{@link net.reimone.ttloc.model.application.TTLOCApplication#getUser <em>User</em>}' containment reference.
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getUser <em>User</em>}' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>User</em>' containment reference.
@@ -60,14 +60,14 @@ public interface TTLOCApplication extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Base URL</em>' attribute.
 	 * @see #setBaseURL(String)
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getTTLOCApplication_BaseURL()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getTTLOCApplication_BaseURL()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getBaseURL();
 
 	/**
-	 * Sets the value of the '{@link net.reimone.ttloc.model.application.TTLOCApplication#getBaseURL <em>Base URL</em>}' attribute.
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getBaseURL <em>Base URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Base URL</em>' attribute.
@@ -86,14 +86,14 @@ public interface TTLOCApplication extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Games Of User URL</em>' attribute.
 	 * @see #setGamesOfUserURL(String)
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getTTLOCApplication_GamesOfUserURL()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getTTLOCApplication_GamesOfUserURL()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getGamesOfUserURL();
 
 	/**
-	 * Sets the value of the '{@link net.reimone.ttloc.model.application.TTLOCApplication#getGamesOfUserURL <em>Games Of User URL</em>}' attribute.
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getGamesOfUserURL <em>Games Of User URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Games Of User URL</em>' attribute.
@@ -112,14 +112,14 @@ public interface TTLOCApplication extends EObject {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Game Report URL</em>' attribute.
 	 * @see #setGameReportURL(String)
-	 * @see net.reimone.ttloc.model.application.ApplicationPackage#getTTLOCApplication_GameReportURL()
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getTTLOCApplication_GameReportURL()
 	 * @model required="true"
 	 * @generated
 	 */
 	String getGameReportURL();
 
 	/**
-	 * Sets the value of the '{@link net.reimone.ttloc.model.application.TTLOCApplication#getGameReportURL <em>Game Report URL</em>}' attribute.
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getGameReportURL <em>Game Report URL</em>}' attribute.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @param value the new value of the '<em>Game Report URL</em>' attribute.

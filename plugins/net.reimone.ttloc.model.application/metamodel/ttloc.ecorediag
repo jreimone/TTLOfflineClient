@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_yAEKwNyIEeG-d8xrX-2Kdg" type="EcoreTools" name="application" measurementUnit="Pixel">
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_yAEKwNyIEeG-d8xrX-2Kdg" type="EcoreTools" name="ttloc" measurementUnit="Pixel">
   <children xmi:type="notation:Node" xmi:id="_4kNNMNyIEeG-d8xrX-2Kdg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_4kQQgNyIEeG-d8xrX-2Kdg" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_4kTT0NyIEeG-d8xrX-2Kdg" type="5001">
       <children xmi:type="notation:Node" xmi:id="_pv7EENyJEeG-d8xrX-2Kdg" type="2001">
-        <element xmi:type="ecore:EAttribute" href="application.ecore#//TTLOCApplication/baseURL"/>
+        <element xmi:type="ecore:EAttribute" href="ttloc.ecore#//TTLOCApplication/baseURL"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_pv7EEdyJEeG-d8xrX-2Kdg"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_sit70NyJEeG-d8xrX-2Kdg" type="2001">
-        <element xmi:type="ecore:EAttribute" href="application.ecore#//TTLOCApplication/gamesOfUserURL"/>
+        <element xmi:type="ecore:EAttribute" href="ttloc.ecore#//TTLOCApplication/gamesOfUserURL"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_sit70dyJEeG-d8xrX-2Kdg"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_8_iTkNyJEeG-d8xrX-2Kdg" type="2001">
-        <element xmi:type="ecore:EAttribute" href="application.ecore#//TTLOCApplication/gameReportURL"/>
+        <element xmi:type="ecore:EAttribute" href="ttloc.ecore#//TTLOCApplication/gameReportURL"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_8_iTkdyJEeG-d8xrX-2Kdg"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_4kTT0dyIEeG-d8xrX-2Kdg"/>
@@ -25,22 +25,22 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_4kT649yIEeG-d8xrX-2Kdg"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_4kN0QNyIEeG-d8xrX-2Kdg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="application.ecore#//TTLOCApplication"/>
+    <element xmi:type="ecore:EClass" href="ttloc.ecore#//TTLOCApplication"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4kN0QdyIEeG-d8xrX-2Kdg" x="165" y="95"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_6bHrgNyIEeG-d8xrX-2Kdg" type="1001">
     <children xmi:type="notation:Node" xmi:id="_6bI5oNyIEeG-d8xrX-2Kdg" type="4001"/>
     <children xmi:type="notation:Node" xmi:id="_6bI5odyIEeG-d8xrX-2Kdg" type="5001">
       <children xmi:type="notation:Node" xmi:id="_9pJtwNyIEeG-d8xrX-2Kdg" type="2001">
-        <element xmi:type="ecore:EAttribute" href="application.ecore#//User/name"/>
+        <element xmi:type="ecore:EAttribute" href="ttloc.ecore#//User/name"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_9pJtwdyIEeG-d8xrX-2Kdg"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_BXMs0NyJEeG-d8xrX-2Kdg" type="2001">
-        <element xmi:type="ecore:EAttribute" href="application.ecore#//User/password"/>
+        <element xmi:type="ecore:EAttribute" href="ttloc.ecore#//User/password"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_BXMs0dyJEeG-d8xrX-2Kdg"/>
       </children>
       <children xmi:type="notation:Node" xmi:id="_FbuSMNyJEeG-d8xrX-2Kdg" type="2001">
-        <element xmi:type="ecore:EAttribute" href="application.ecore#//User/id"/>
+        <element xmi:type="ecore:EAttribute" href="ttloc.ecore#//User/id"/>
         <layoutConstraint xmi:type="notation:Location" xmi:id="_FbuSMdyJEeG-d8xrX-2Kdg"/>
       </children>
       <styles xmi:type="notation:DrawerStyle" xmi:id="_6bI5otyIEeG-d8xrX-2Kdg"/>
@@ -53,7 +53,7 @@
       <styles xmi:type="notation:FilteringStyle" xmi:id="_6bJgs9yIEeG-d8xrX-2Kdg"/>
     </children>
     <styles xmi:type="notation:ShapeStyle" xmi:id="_6bHrgdyIEeG-d8xrX-2Kdg" fontColor="4210752" fontName="Segoe UI" fontHeight="10" fillColor="13761016" lineColor="8421504"/>
-    <element xmi:type="ecore:EClass" href="application.ecore#//User"/>
+    <element xmi:type="ecore:EClass" href="ttloc.ecore#//User"/>
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6bHrgtyIEeG-d8xrX-2Kdg" x="178" y="281"/>
   </children>
   <children xmi:type="notation:Node" xmi:id="_MuQrsNyJEeG-d8xrX-2Kdg" type="1001">
@@ -76,7 +76,7 @@
     <layoutConstraint xmi:type="notation:Bounds" xmi:id="_MuQrstyJEeG-d8xrX-2Kdg" x="535" y="275"/>
   </children>
   <styles xmi:type="notation:DiagramStyle" xmi:id="_yAEKwdyIEeG-d8xrX-2Kdg"/>
-  <element xmi:type="ecore:EPackage" href="application.ecore#/"/>
+  <element xmi:type="ecore:EPackage" href="ttloc.ecore#/"/>
   <edges xmi:type="notation:Edge" xmi:id="_7Hkh0NyIEeG-d8xrX-2Kdg" type="3002" source="_4kNNMNyIEeG-d8xrX-2Kdg" target="_6bHrgNyIEeG-d8xrX-2Kdg">
     <children xmi:type="notation:Node" xmi:id="_7HmXANyIEeG-d8xrX-2Kdg" type="4011">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_7HmXAdyIEeG-d8xrX-2Kdg" x="8" y="-29"/>
@@ -86,7 +86,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_7Hkh0dyIEeG-d8xrX-2Kdg" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_7Hkh0tyIEeG-d8xrX-2Kdg" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="application.ecore#//TTLOCApplication/user"/>
+    <element xmi:type="ecore:EReference" href="ttloc.ecore#//TTLOCApplication/user"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7Hkh09yIEeG-d8xrX-2Kdg" points="[3, 21, 3, -162]$[3, 204, 3, 21]"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_fZA6oNyJEeG-d8xrX-2Kdg" type="3002" source="_6bHrgNyIEeG-d8xrX-2Kdg" target="_MuQrsNyJEeG-d8xrX-2Kdg">
@@ -98,7 +98,7 @@
     </children>
     <styles xmi:type="notation:ConnectorStyle" xmi:id="_fZA6odyJEeG-d8xrX-2Kdg" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_fZA6otyJEeG-d8xrX-2Kdg" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
-    <element xmi:type="ecore:EReference" href="application.ecore#//User/games"/>
+    <element xmi:type="ecore:EReference" href="ttloc.ecore#//User/games"/>
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fZA6o9yJEeG-d8xrX-2Kdg" points="[12, -1, -255, 18]$[268, -37, 1, -18]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fdxe0NyJEeG-d8xrX-2Kdg" id="(0.9142857142857143,0.10588235294117647)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fdxe0dyJEeG-d8xrX-2Kdg" id="(0.2235294117647059,0.07983193277310924)"/>

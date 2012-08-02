@@ -1,8 +1,8 @@
 /**
  */
-package net.reimone.ttloc.model.application.impl;
+package net.reimone.ttloc.model.ttloc.impl;
 
-import net.reimone.ttloc.model.application.*;
+import net.reimone.ttloc.model.ttloc.*;
 
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EObject;
@@ -18,24 +18,24 @@ import org.eclipse.emf.ecore.plugin.EcorePlugin;
  * <!-- end-user-doc -->
  * @generated
  */
-public class ApplicationFactoryImpl extends EFactoryImpl implements ApplicationFactory {
+public class TtlocFactoryImpl extends EFactoryImpl implements TtlocFactory {
 	/**
 	 * Creates the default factory implementation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public static ApplicationFactory init() {
+	public static TtlocFactory init() {
 		try {
-			ApplicationFactory theApplicationFactory = (ApplicationFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.reimone.net/TTLOC/application"); 
-			if (theApplicationFactory != null) {
-				return theApplicationFactory;
+			TtlocFactory theTtlocFactory = (TtlocFactory)EPackage.Registry.INSTANCE.getEFactory("http://www.reimone.net/ttloc"); 
+			if (theTtlocFactory != null) {
+				return theTtlocFactory;
 			}
 		}
 		catch (Exception exception) {
 			EcorePlugin.INSTANCE.log(exception);
 		}
-		return new ApplicationFactoryImpl();
+		return new TtlocFactoryImpl();
 	}
 
 	/**
@@ -44,7 +44,7 @@ public class ApplicationFactoryImpl extends EFactoryImpl implements ApplicationF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ApplicationFactoryImpl() {
+	public TtlocFactoryImpl() {
 		super();
 	}
 
@@ -56,8 +56,8 @@ public class ApplicationFactoryImpl extends EFactoryImpl implements ApplicationF
 	@Override
 	public EObject create(EClass eClass) {
 		switch (eClass.getClassifierID()) {
-			case ApplicationPackage.TTLOC_APPLICATION: return createTTLOCApplication();
-			case ApplicationPackage.USER: return createUser();
+			case TtlocPackage.TTLOC_APPLICATION: return createTTLOCApplication();
+			case TtlocPackage.USER: return createUser();
 			default:
 				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
 		}
@@ -88,8 +88,8 @@ public class ApplicationFactoryImpl extends EFactoryImpl implements ApplicationF
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ApplicationPackage getApplicationPackage() {
-		return (ApplicationPackage)getEPackage();
+	public TtlocPackage getTtlocPackage() {
+		return (TtlocPackage)getEPackage();
 	}
 
 	/**
@@ -99,8 +99,8 @@ public class ApplicationFactoryImpl extends EFactoryImpl implements ApplicationF
 	 * @generated
 	 */
 	@Deprecated
-	public static ApplicationPackage getPackage() {
-		return ApplicationPackage.eINSTANCE;
+	public static TtlocPackage getPackage() {
+		return TtlocPackage.eINSTANCE;
 	}
 
-} //ApplicationFactoryImpl
+} //TtlocFactoryImpl

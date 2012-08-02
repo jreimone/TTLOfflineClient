@@ -1,6 +1,6 @@
 /**
  */
-package net.reimone.ttloc.model.application.util;
+package net.reimone.ttloc.model.ttloc.util;
 
 import org.eclipse.emf.common.util.URI;
 
@@ -14,17 +14,17 @@ import org.eclipse.emf.ecore.xmi.XMLResource;
  * <!-- begin-user-doc -->
  * The <b>Resource Factory</b> associated with the package.
  * <!-- end-user-doc -->
- * @see net.reimone.ttloc.model.application.util.ApplicationResourceImpl
+ * @see net.reimone.ttloc.model.ttloc.util.TtlocResourceImpl
  * @generated
  */
-public class ApplicationResourceFactoryImpl extends ResourceFactoryImpl {
+public class TtlocResourceFactoryImpl extends ResourceFactoryImpl {
 	/**
 	 * Creates an instance of the resource factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public ApplicationResourceFactoryImpl() {
+	public TtlocResourceFactoryImpl() {
 		super();
 	}
 
@@ -36,7 +36,7 @@ public class ApplicationResourceFactoryImpl extends ResourceFactoryImpl {
 	 */
 	@Override
 	public Resource createResource(URI uri) {
-		XMLResource result = new ApplicationResourceImpl(uri);
+		XMLResource result = new TtlocResourceImpl(uri);
 		result.getDefaultSaveOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 		result.getDefaultLoadOptions().put(XMLResource.OPTION_EXTENDED_META_DATA, Boolean.TRUE);
 
@@ -49,4 +49,4 @@ public class ApplicationResourceFactoryImpl extends ResourceFactoryImpl {
 		return result;
 	}
 
-} //ApplicationResourceFactoryImpl
+} //TtlocResourceFactoryImpl

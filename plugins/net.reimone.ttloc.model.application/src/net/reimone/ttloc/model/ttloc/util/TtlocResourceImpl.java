@@ -1,6 +1,6 @@
 /**
  */
-package net.reimone.ttloc.model.application.util;
+package net.reimone.ttloc.model.ttloc.util;
 
 import org.eclipse.emf.common.util.URI;
 
@@ -10,10 +10,10 @@ import org.eclipse.emf.ecore.xmi.impl.XMLResourceImpl;
  * <!-- begin-user-doc -->
  * The <b>Resource </b> associated with the package.
  * <!-- end-user-doc -->
- * @see net.reimone.ttloc.model.application.util.ApplicationResourceFactoryImpl
+ * @see net.reimone.ttloc.model.ttloc.util.TtlocResourceFactoryImpl
  * @generated
  */
-public class ApplicationResourceImpl extends XMLResourceImpl {
+public class TtlocResourceImpl extends XMLResourceImpl {
 	/**
 	 * Creates an instance of the resource.
 	 * <!-- begin-user-doc -->
@@ -21,8 +21,8 @@ public class ApplicationResourceImpl extends XMLResourceImpl {
 	 * @param uri the URI of the new resource.
 	 * @generated
 	 */
-	public ApplicationResourceImpl(URI uri) {
+	public TtlocResourceImpl(URI uri) {
 		super(uri);
 	}
 
-} //ApplicationResourceImpl
+} //TtlocResourceImpl

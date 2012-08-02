@@ -1,6 +1,6 @@
 /**
  */
-package net.reimone.ttloc.model.application;
+package net.reimone.ttloc.model.ttloc;
 
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
@@ -18,18 +18,18 @@ import org.eclipse.emf.ecore.EReference;
  *   <li>and each data type</li>
  * </ul>
  * <!-- end-user-doc -->
- * @see net.reimone.ttloc.model.application.ApplicationFactory
+ * @see net.reimone.ttloc.model.ttloc.TtlocFactory
  * @model kind="package"
  * @generated
  */
-public interface ApplicationPackage extends EPackage {
+public interface TtlocPackage extends EPackage {
 	/**
 	 * The package name.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNAME = "application";
+	String eNAME = "ttloc";
 
 	/**
 	 * The package namespace URI.
@@ -37,7 +37,7 @@ public interface ApplicationPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.reimone.net/TTLOC/application";
+	String eNS_URI = "http://www.reimone.net/ttloc";
 
 	/**
 	 * The package namespace name.
@@ -45,7 +45,7 @@ public interface ApplicationPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_PREFIX = "application";
+	String eNS_PREFIX = "ttloc";
 
 	/**
 	 * The singleton instance of the package.
@@ -53,14 +53,14 @@ public interface ApplicationPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ApplicationPackage eINSTANCE = net.reimone.ttloc.model.application.impl.ApplicationPackageImpl.init();
+	TtlocPackage eINSTANCE = net.reimone.ttloc.model.ttloc.impl.TtlocPackageImpl.init();
 
 	/**
-	 * The meta object id for the '{@link net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl <em>TTLOC Application</em>}' class.
+	 * The meta object id for the '{@link net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl <em>TTLOC Application</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl
-	 * @see net.reimone.ttloc.model.application.impl.ApplicationPackageImpl#getTTLOCApplication()
+	 * @see net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl
+	 * @see net.reimone.ttloc.model.ttloc.impl.TtlocPackageImpl#getTTLOCApplication()
 	 * @generated
 	 */
 	int TTLOC_APPLICATION = 0;
@@ -111,11 +111,11 @@ public interface ApplicationPackage extends EPackage {
 	int TTLOC_APPLICATION_FEATURE_COUNT = 4;
 
 	/**
-	 * The meta object id for the '{@link net.reimone.ttloc.model.application.impl.UserImpl <em>User</em>}' class.
+	 * The meta object id for the '{@link net.reimone.ttloc.model.ttloc.impl.UserImpl <em>User</em>}' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see net.reimone.ttloc.model.application.impl.UserImpl
-	 * @see net.reimone.ttloc.model.application.impl.ApplicationPackageImpl#getUser()
+	 * @see net.reimone.ttloc.model.ttloc.impl.UserImpl
+	 * @see net.reimone.ttloc.model.ttloc.impl.TtlocPackageImpl#getUser()
 	 * @generated
 	 */
 	int USER = 1;
@@ -167,108 +167,108 @@ public interface ApplicationPackage extends EPackage {
 
 
 	/**
-	 * Returns the meta object for class '{@link net.reimone.ttloc.model.application.TTLOCApplication <em>TTLOC Application</em>}'.
+	 * Returns the meta object for class '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication <em>TTLOC Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>TTLOC Application</em>'.
-	 * @see net.reimone.ttloc.model.application.TTLOCApplication
+	 * @see net.reimone.ttloc.model.ttloc.TTLOCApplication
 	 * @generated
 	 */
 	EClass getTTLOCApplication();
 
 	/**
-	 * Returns the meta object for the containment reference '{@link net.reimone.ttloc.model.application.TTLOCApplication#getUser <em>User</em>}'.
+	 * Returns the meta object for the containment reference '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getUser <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the containment reference '<em>User</em>'.
-	 * @see net.reimone.ttloc.model.application.TTLOCApplication#getUser()
+	 * @see net.reimone.ttloc.model.ttloc.TTLOCApplication#getUser()
 	 * @see #getTTLOCApplication()
 	 * @generated
 	 */
 	EReference getTTLOCApplication_User();
 
 	/**
-	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.application.TTLOCApplication#getBaseURL <em>Base URL</em>}'.
+	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getBaseURL <em>Base URL</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Base URL</em>'.
-	 * @see net.reimone.ttloc.model.application.TTLOCApplication#getBaseURL()
+	 * @see net.reimone.ttloc.model.ttloc.TTLOCApplication#getBaseURL()
 	 * @see #getTTLOCApplication()
 	 * @generated
 	 */
 	EAttribute getTTLOCApplication_BaseURL();
 
 	/**
-	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.application.TTLOCApplication#getGamesOfUserURL <em>Games Of User URL</em>}'.
+	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getGamesOfUserURL <em>Games Of User URL</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Games Of User URL</em>'.
-	 * @see net.reimone.ttloc.model.application.TTLOCApplication#getGamesOfUserURL()
+	 * @see net.reimone.ttloc.model.ttloc.TTLOCApplication#getGamesOfUserURL()
 	 * @see #getTTLOCApplication()
 	 * @generated
 	 */
 	EAttribute getTTLOCApplication_GamesOfUserURL();
 
 	/**
-	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.application.TTLOCApplication#getGameReportURL <em>Game Report URL</em>}'.
+	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getGameReportURL <em>Game Report URL</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Game Report URL</em>'.
-	 * @see net.reimone.ttloc.model.application.TTLOCApplication#getGameReportURL()
+	 * @see net.reimone.ttloc.model.ttloc.TTLOCApplication#getGameReportURL()
 	 * @see #getTTLOCApplication()
 	 * @generated
 	 */
 	EAttribute getTTLOCApplication_GameReportURL();
 
 	/**
-	 * Returns the meta object for class '{@link net.reimone.ttloc.model.application.User <em>User</em>}'.
+	 * Returns the meta object for class '{@link net.reimone.ttloc.model.ttloc.User <em>User</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for class '<em>User</em>'.
-	 * @see net.reimone.ttloc.model.application.User
+	 * @see net.reimone.ttloc.model.ttloc.User
 	 * @generated
 	 */
 	EClass getUser();
 
 	/**
-	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.application.User#getName <em>Name</em>}'.
+	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.ttloc.User#getName <em>Name</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Name</em>'.
-	 * @see net.reimone.ttloc.model.application.User#getName()
+	 * @see net.reimone.ttloc.model.ttloc.User#getName()
 	 * @see #getUser()
 	 * @generated
 	 */
 	EAttribute getUser_Name();
 
 	/**
-	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.application.User#getPassword <em>Password</em>}'.
+	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.ttloc.User#getPassword <em>Password</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Password</em>'.
-	 * @see net.reimone.ttloc.model.application.User#getPassword()
+	 * @see net.reimone.ttloc.model.ttloc.User#getPassword()
 	 * @see #getUser()
 	 * @generated
 	 */
 	EAttribute getUser_Password();
 
 	/**
-	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.application.User#getId <em>Id</em>}'.
+	 * Returns the meta object for the attribute '{@link net.reimone.ttloc.model.ttloc.User#getId <em>Id</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the attribute '<em>Id</em>'.
-	 * @see net.reimone.ttloc.model.application.User#getId()
+	 * @see net.reimone.ttloc.model.ttloc.User#getId()
 	 * @see #getUser()
 	 * @generated
 	 */
 	EAttribute getUser_Id();
 
 	/**
-	 * Returns the meta object for the reference list '{@link net.reimone.ttloc.model.application.User#getGames <em>Games</em>}'.
+	 * Returns the meta object for the reference list '{@link net.reimone.ttloc.model.ttloc.User#getGames <em>Games</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the meta object for the reference list '<em>Games</em>'.
-	 * @see net.reimone.ttloc.model.application.User#getGames()
+	 * @see net.reimone.ttloc.model.ttloc.User#getGames()
 	 * @see #getUser()
 	 * @generated
 	 */
@@ -281,7 +281,7 @@ public interface ApplicationPackage extends EPackage {
 	 * @return the factory that creates the instances of the model.
 	 * @generated
 	 */
-	ApplicationFactory getApplicationFactory();
+	TtlocFactory getTtlocFactory();
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -297,11 +297,11 @@ public interface ApplicationPackage extends EPackage {
 	 */
 	interface Literals {
 		/**
-		 * The meta object literal for the '{@link net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl <em>TTLOC Application</em>}' class.
+		 * The meta object literal for the '{@link net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl <em>TTLOC Application</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.reimone.ttloc.model.application.impl.TTLOCApplicationImpl
-		 * @see net.reimone.ttloc.model.application.impl.ApplicationPackageImpl#getTTLOCApplication()
+		 * @see net.reimone.ttloc.model.ttloc.impl.TTLOCApplicationImpl
+		 * @see net.reimone.ttloc.model.ttloc.impl.TtlocPackageImpl#getTTLOCApplication()
 		 * @generated
 		 */
 		EClass TTLOC_APPLICATION = eINSTANCE.getTTLOCApplication();
@@ -339,11 +339,11 @@ public interface ApplicationPackage extends EPackage {
 		EAttribute TTLOC_APPLICATION__GAME_REPORT_URL = eINSTANCE.getTTLOCApplication_GameReportURL();
 
 		/**
-		 * The meta object literal for the '{@link net.reimone.ttloc.model.application.impl.UserImpl <em>User</em>}' class.
+		 * The meta object literal for the '{@link net.reimone.ttloc.model.ttloc.impl.UserImpl <em>User</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
-		 * @see net.reimone.ttloc.model.application.impl.UserImpl
-		 * @see net.reimone.ttloc.model.application.impl.ApplicationPackageImpl#getUser()
+		 * @see net.reimone.ttloc.model.ttloc.impl.UserImpl
+		 * @see net.reimone.ttloc.model.ttloc.impl.TtlocPackageImpl#getUser()
 		 * @generated
 		 */
 		EClass USER = eINSTANCE.getUser();
@@ -382,4 +382,4 @@ public interface ApplicationPackage extends EPackage {
 
 	}
 
-} //ApplicationPackage
+} //TtlocPackage

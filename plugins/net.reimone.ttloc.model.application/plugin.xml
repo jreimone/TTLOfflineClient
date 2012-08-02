@@ -8,15 +8,15 @@
 
    <extension point="org.eclipse.emf.ecore.generated_package">
       <package
-            uri="http://www.reimone.net/TTLOC/application"
-            class="net.reimone.ttloc.model.application.ApplicationPackage"
-            genModel="metamodel/application.genmodel"/>
+            uri="http://www.reimone.net/ttloc"
+            class="net.reimone.ttloc.model.ttloc.TtlocPackage"
+            genModel="metamodel/ttloc.genmodel"/>
    </extension>
 
    <extension point="org.eclipse.emf.ecore.extension_parser">
       <parser
-            type="application"
-            class="net.reimone.ttloc.model.application.util.ApplicationResourceFactoryImpl"/>
+            type="ttloc"
+            class="net.reimone.ttloc.model.ttloc.util.TtlocResourceFactoryImpl"/>
    </extension>
 
 </plugin>

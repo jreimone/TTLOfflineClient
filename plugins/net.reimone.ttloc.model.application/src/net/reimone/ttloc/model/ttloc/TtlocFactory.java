@@ -1,6 +1,6 @@
 /**
  */
-package net.reimone.ttloc.model.application;
+package net.reimone.ttloc.model.ttloc;
 
 import org.eclipse.emf.ecore.EFactory;
 
@@ -9,17 +9,17 @@ import org.eclipse.emf.ecore.EFactory;
  * The <b>Factory</b> for the model.
  * It provides a create method for each non-abstract class of the model.
  * <!-- end-user-doc -->
- * @see net.reimone.ttloc.model.application.ApplicationPackage
+ * @see net.reimone.ttloc.model.ttloc.TtlocPackage
  * @generated
  */
-public interface ApplicationFactory extends EFactory {
+public interface TtlocFactory extends EFactory {
 	/**
 	 * The singleton instance of the factory.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	ApplicationFactory eINSTANCE = net.reimone.ttloc.model.application.impl.ApplicationFactoryImpl.init();
+	TtlocFactory eINSTANCE = net.reimone.ttloc.model.ttloc.impl.TtlocFactoryImpl.init();
 
 	/**
 	 * Returns a new object of class '<em>TTLOC Application</em>'.
@@ -46,6 +46,6 @@ public interface ApplicationFactory extends EFactory {
 	 * @return the package supported by this factory.
 	 * @generated
 	 */
-	ApplicationPackage getApplicationPackage();
+	TtlocPackage getTtlocPackage();
 
-} //ApplicationFactory
+} //TtlocFactory

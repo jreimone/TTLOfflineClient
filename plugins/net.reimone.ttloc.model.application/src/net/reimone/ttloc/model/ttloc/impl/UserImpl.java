@@ -1,13 +1,13 @@
 /**
  */
-package net.reimone.ttloc.model.application.impl;
+package net.reimone.ttloc.model.ttloc.impl;
 
 import java.util.Collection;
 
 import net.reimone.ttloc.model.UserSpiele.SpielType;
 
-import net.reimone.ttloc.model.application.ApplicationPackage;
-import net.reimone.ttloc.model.application.User;
+import net.reimone.ttloc.model.ttloc.TtlocPackage;
+import net.reimone.ttloc.model.ttloc.User;
 
 import org.eclipse.emf.common.notify.Notification;
 
@@ -27,10 +27,10 @@ import org.eclipse.emf.ecore.util.EObjectResolvingEList;
  * <p>
  * The following features are implemented:
  * <ul>
- *   <li>{@link net.reimone.ttloc.model.application.impl.UserImpl#getName <em>Name</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.impl.UserImpl#getPassword <em>Password</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.impl.UserImpl#getId <em>Id</em>}</li>
- *   <li>{@link net.reimone.ttloc.model.application.impl.UserImpl#getGames <em>Games</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.UserImpl#getName <em>Name</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.UserImpl#getPassword <em>Password</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.UserImpl#getId <em>Id</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.impl.UserImpl#getGames <em>Games</em>}</li>
  * </ul>
  * </p>
  *
@@ -123,7 +123,7 @@ public class UserImpl extends EObjectImpl implements User {
 	 */
 	@Override
 	protected EClass eStaticClass() {
-		return ApplicationPackage.Literals.USER;
+		return TtlocPackage.Literals.USER;
 	}
 
 	/**
@@ -144,7 +144,7 @@ public class UserImpl extends EObjectImpl implements User {
 		String oldName = name;
 		name = newName;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationPackage.USER__NAME, oldName, name));
+			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.USER__NAME, oldName, name));
 	}
 
 	/**
@@ -165,7 +165,7 @@ public class UserImpl extends EObjectImpl implements User {
 		String oldPassword = password;
 		password = newPassword;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationPackage.USER__PASSWORD, oldPassword, password));
+			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.USER__PASSWORD, oldPassword, password));
 	}
 
 	/**
@@ -186,7 +186,7 @@ public class UserImpl extends EObjectImpl implements User {
 		String oldId = id;
 		id = newId;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, ApplicationPackage.USER__ID, oldId, id));
+			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.USER__ID, oldId, id));
 	}
 
 	/**
@@ -196,7 +196,7 @@ public class UserImpl extends EObjectImpl implements User {
 	 */
 	public EList<SpielType> getGames() {
 		if (games == null) {
-			games = new EObjectResolvingEList<SpielType>(SpielType.class, this, ApplicationPackage.USER__GAMES);
+			games = new EObjectResolvingEList<SpielType>(SpielType.class, this, TtlocPackage.USER__GAMES);
 		}
 		return games;
 	}
@@ -209,13 +209,13 @@ public class UserImpl extends EObjectImpl implements User {
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
-			case ApplicationPackage.USER__NAME:
+			case TtlocPackage.USER__NAME:
 				return getName();
-			case ApplicationPackage.USER__PASSWORD:
+			case TtlocPackage.USER__PASSWORD:
 				return getPassword();
-			case ApplicationPackage.USER__ID:
+			case TtlocPackage.USER__ID:
 				return getId();
-			case ApplicationPackage.USER__GAMES:
+			case TtlocPackage.USER__GAMES:
 				return getGames();
 		}
 		return super.eGet(featureID, resolve, coreType);
@@ -230,16 +230,16 @@ public class UserImpl extends EObjectImpl implements User {
 	@Override
 	public void eSet(int featureID, Object newValue) {
 		switch (featureID) {
-			case ApplicationPackage.USER__NAME:
+			case TtlocPackage.USER__NAME:
 				setName((String)newValue);
 				return;
-			case ApplicationPackage.USER__PASSWORD:
+			case TtlocPackage.USER__PASSWORD:
 				setPassword((String)newValue);
 				return;
-			case ApplicationPackage.USER__ID:
+			case TtlocPackage.USER__ID:
 				setId((String)newValue);
 				return;
-			case ApplicationPackage.USER__GAMES:
+			case TtlocPackage.USER__GAMES:
 				getGames().clear();
 				getGames().addAll((Collection<? extends SpielType>)newValue);
 				return;
@@ -255,16 +255,16 @@ public class UserImpl extends EObjectImpl implements User {
 	@Override
 	public void eUnset(int featureID) {
 		switch (featureID) {
-			case ApplicationPackage.USER__NAME:
+			case TtlocPackage.USER__NAME:
 				setName(NAME_EDEFAULT);
 				return;
-			case ApplicationPackage.USER__PASSWORD:
+			case TtlocPackage.USER__PASSWORD:
 				setPassword(PASSWORD_EDEFAULT);
 				return;
-			case ApplicationPackage.USER__ID:
+			case TtlocPackage.USER__ID:
 				setId(ID_EDEFAULT);
 				return;
-			case ApplicationPackage.USER__GAMES:
+			case TtlocPackage.USER__GAMES:
 				getGames().clear();
 				return;
 		}
@@ -279,13 +279,13 @@ public class UserImpl extends EObjectImpl implements User {
 	@Override
 	public boolean eIsSet(int featureID) {
 		switch (featureID) {
-			case ApplicationPackage.USER__NAME:
+			case TtlocPackage.USER__NAME:
 				return NAME_EDEFAULT == null ? name != null : !NAME_EDEFAULT.equals(name);
-			case ApplicationPackage.USER__PASSWORD:
+			case TtlocPackage.USER__PASSWORD:
 				return PASSWORD_EDEFAULT == null ? password != null : !PASSWORD_EDEFAULT.equals(password);
-			case ApplicationPackage.USER__ID:
+			case TtlocPackage.USER__ID:
 				return ID_EDEFAULT == null ? id != null : !ID_EDEFAULT.equals(id);
-			case ApplicationPackage.USER__GAMES:
+			case TtlocPackage.USER__GAMES:
 				return games != null && !games.isEmpty();
 		}
 		return super.eIsSet(featureID);
