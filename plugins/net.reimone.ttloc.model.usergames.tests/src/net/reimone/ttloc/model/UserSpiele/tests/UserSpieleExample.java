@@ -65,13 +65,12 @@ public class UserSpieleExample {
 		if (args.length == 0) {
 			System.out.println("Enter a list of file paths or URIs that have content like this:");
 			try {
-				File test = new File("test.userspiele");
-				Resource resource = resourceSet.createResource(URI.createURI(test.getAbsolutePath()));
+				Resource resource = resourceSet.createResource(URI.createURI("http:///My.userspiele"));
 				DocumentRoot documentRoot = UserSpieleFactory.eINSTANCE.createDocumentRoot();
 				SpielplanType root = UserSpieleFactory.eINSTANCE.createSpielplanType();
 				documentRoot.setSpielplan(root);
 				resource.getContents().add(documentRoot);
-				resource.save(new FileOutputStream(test), null);
+				resource.save(System.out, null);
 			}
 			catch (IOException exception) {
 				exception.printStackTrace();
