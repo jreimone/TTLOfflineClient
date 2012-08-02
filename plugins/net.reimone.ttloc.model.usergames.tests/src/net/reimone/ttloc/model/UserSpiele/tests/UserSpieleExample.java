@@ -7,26 +7,20 @@
 package net.reimone.ttloc.model.UserSpiele.tests;
 
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.IOException;
 
 import net.reimone.ttloc.model.UserSpiele.DocumentRoot;
 import net.reimone.ttloc.model.UserSpiele.SpielplanType;
 import net.reimone.ttloc.model.UserSpiele.UserSpieleFactory;
 import net.reimone.ttloc.model.UserSpiele.UserSpielePackage;
-
 import net.reimone.ttloc.model.UserSpiele.util.UserSpieleResourceFactoryImpl;
 
 import org.eclipse.emf.common.util.Diagnostic;
 import org.eclipse.emf.common.util.URI;
-
 import org.eclipse.emf.ecore.EObject;
-
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
-
 import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
-
 import org.eclipse.emf.ecore.util.Diagnostician;
 
 /**
