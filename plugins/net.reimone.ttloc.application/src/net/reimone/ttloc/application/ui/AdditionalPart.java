@@ -1,4 +1,4 @@
-package net.reimone.ttloc.application.parts;
+package net.reimone.ttloc.application.ui;
 
 public class AdditionalPart {
 

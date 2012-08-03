@@ -15,4 +15,12 @@ public interface ApplicationConstants {
 //	
 //	// Perspective
 //	public static final String PERSPECTIVE_ID 		= "net.reimone.ttloc.application.perspective"; //$NON-NLS-1$
+	
+	// Preferences
+	public static final String PREF_BASE 	= "net.reimone.ttloc.pref";
+//	public static final String PREF_GENERAL = "/general";
+//	public static final String PREF_USER 	= "/user";
+	public static final String PREF_NAME 	= "name";
+	public static final String PREF_ID 		= "id";
+	public static final String PREF_PASS	= "password";
 }
