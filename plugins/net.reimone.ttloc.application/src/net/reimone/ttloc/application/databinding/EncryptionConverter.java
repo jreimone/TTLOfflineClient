@@ -1,4 +1,4 @@
-package net.reimone.ttloc.application.encryption;
+package net.reimone.ttloc.application.databinding;
 
 import org.eclipse.core.databinding.conversion.IConverter;
 

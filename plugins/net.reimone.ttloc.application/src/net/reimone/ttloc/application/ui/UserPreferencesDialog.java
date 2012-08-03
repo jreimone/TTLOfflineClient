@@ -4,6 +4,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import net.reimone.ttloc.application.ApplicationConstants;
+import net.reimone.ttloc.application.databinding.EncryptionConverter;
 import net.reimone.ttloc.model.ttloc.TTLOCApplication;
 import net.reimone.ttloc.model.ttloc.User;
 
@@ -32,6 +33,7 @@ import org.osgi.service.prefs.Preferences;
 import net.reimone.ttloc.model.ttloc.TtlocPackage.Literals;
 import org.eclipse.core.databinding.Binding;
 import org.eclipse.core.databinding.UpdateValueStrategy;
+import net.reimone.ttloc.application.databinding.NotEmptyValidator;
 
 /**
  * Dialog for the preferences
@@ -40,7 +42,6 @@ import org.eclipse.core.databinding.UpdateValueStrategy;
  *
  */
 public class UserPreferencesDialog extends TitleAreaDialog{
-	private Binding passwordBinding;
 	
 	private DataBindingContext m_bindingContext;
 
@@ -51,7 +52,6 @@ public class UserPreferencesDialog extends TitleAreaDialog{
 	private Text txtUserId;
 	private Text txtPassword;
 	private Text txtName;
-	private IConverter converter;
 	
 	@Inject
 	public UserPreferencesDialog(@Named(IServiceConstants.ACTIVE_SHELL) Shell parentShell) {
@@ -126,6 +126,7 @@ public class UserPreferencesDialog extends TitleAreaDialog{
 		}
 		super.okPressed();
 	}
+	
 	protected DataBindingContext initDataBindings() {
 		DataBindingContext bindingContext = new DataBindingContext();
 		//
@@ -135,7 +136,10 @@ public class UserPreferencesDialog extends TitleAreaDialog{
 		//
 		IObservableValue observeTextTxtPasswordObserveWidget = WidgetProperties.text(SWT.Modify).observe(txtPassword);
 		IObservableValue userPasswordObserveValue = EMFObservables.observeValue(user, Literals.USER__PASSWORD);
-		passwordBinding = bindingContext.bindValue(observeTextTxtPasswordObserveWidget, userPasswordObserveValue, null, null);
+		UpdateValueStrategy strategy = new UpdateValueStrategy();
+		strategy.setConverter(new EncryptionConverter());
+		strategy.setBeforeSetValidator(new NotEmptyValidator());
+		bindingContext.bindValue(observeTextTxtPasswordObserveWidget, userPasswordObserveValue, strategy, null);
 		//
 		IObservableValue observeTextTxtNameObserveWidget = WidgetProperties.text(SWT.Modify).observe(txtName);
 		IObservableValue userNameObserveValue = EMFObservables.observeValue(user, Literals.USER__NAME);

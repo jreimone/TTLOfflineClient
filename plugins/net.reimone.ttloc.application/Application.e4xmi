@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_mPbhYNygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ide.application" bindingContexts="_mPcIcNygEeG1pPPwTpINKg">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_mPcIhtygEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.window" label="Tischtennis Live Offlince Client" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/tt.gif" width="500" height="400">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_mPcIhtygEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.window" label="Tischtennis Live Offlince Client" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/tt.gif" width="800" height="600">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_mPcvh9ygEeG1pPPwTpINKg">
       <children xsi:type="advanced:Perspective" xmi:id="_mPcviNygEeG1pPPwTpINKg" elementId="net.reimone.ttloc.application.perspective" label="TTLOC Perspective" iconURI="platform:/plugin/net.reimone.ttloc.application/icons/tt.gif">
         <children xsi:type="basic:PartSashContainer" xmi:id="_mPcvidygEeG1pPPwTpINKg" horizontal="true">
@@ -66,4 +66,5 @@
   <addons xmi:id="_mPcId9ygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
   <addons xmi:id="_mPcIeNygEeG1pPPwTpINKg" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
   <addons xmi:id="_WK3SwNy6EeG5rutO_sZyCA" elementId="net.reimone.ttloc.application.initialisation" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.ApplicationInitialisation"/>
+  <addons xmi:id="_0yoyoN2REeG3vM8VGykJ7Q" elementId="net.reimone.ttloc.application.preferenceshandler" contributionURI="bundleclass://net.reimone.ttloc.application/net.reimone.ttloc.application.handlers.PreferencesHandler"/>
 </application:Application>

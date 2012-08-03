@@ -21,13 +21,13 @@ public class PreferencesHandler {
 	
 	@Inject
 	private void userPasswordChanged(@Preference(nodePath=ApplicationConstants.PREF_BASE, value=ApplicationConstants.PREF_PASS) String password){
-		application.getUser().setName(password);
+		application.getUser().setPassword(password);
 		modified = true;
 	}
 	
 	@Inject
 	private void idChanged(@Preference(nodePath=ApplicationConstants.PREF_BASE, value=ApplicationConstants.PREF_ID) String id){
-		application.getUser().setName(id);
+		application.getUser().setId(id);
 		modified = true;
 	}
 	

@@ -2,6 +2,7 @@ package net.reimone.ttloc.application;
 
 import javax.annotation.PostConstruct;
 
+import net.reimone.ttloc.application.handlers.PreferencesChangeListener;
 import net.reimone.ttloc.model.ttloc.TTLOCApplication;
 import net.reimone.ttloc.model.ttloc.TtlocFactory;
 import net.reimone.ttloc.model.ttloc.User;
@@ -32,11 +33,13 @@ public class ApplicationInitialisation {
 		ttlocApplication.setUser(user);
 		context.set(TTLOCApplication.class, ttlocApplication);
 
-		initPreferences(user);
+		initPreferences(ttlocApplication);
 	}
 	
-	private void initPreferences(User user){
+	private void initPreferences(TTLOCApplication ttlocApplication){
+		User user = ttlocApplication.getUser();
 		IEclipsePreferences preferences = ConfigurationScope.INSTANCE.getNode(ApplicationConstants.PREF_BASE);
+		preferences.addPreferenceChangeListener(new PreferencesChangeListener(ttlocApplication));
 		String id = preferences.get(ApplicationConstants.PREF_ID, null);
 		String pass = preferences.get(ApplicationConstants.PREF_PASS, null);
 		String name = preferences.get(ApplicationConstants.PREF_NAME, null);
