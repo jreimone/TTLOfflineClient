@@ -1,1 +1,3 @@
 This project intends to develop an offline client for the TischtennisLive community at http://dresden-stadt.tischtennislive.de/
+
+With that client data of a table tennis game can be requested from the server beforehand. While the game runs results can be edited offline and pushed to the server afterwards. This way one is prevented from editing the results on paper and then again online on the webpage.
