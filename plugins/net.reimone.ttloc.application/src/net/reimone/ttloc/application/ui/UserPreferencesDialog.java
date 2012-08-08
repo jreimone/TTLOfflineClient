@@ -126,7 +126,6 @@ public class UserPreferencesDialog extends TitleAreaDialog{
 		}
 		super.okPressed();
 	}
-	
 	protected DataBindingContext initDataBindings() {
 		DataBindingContext bindingContext = new DataBindingContext();
 		//

@@ -1,11 +1,21 @@
 package net.reimone.ttloc.application.handlers;
 
+import java.io.UnsupportedEncodingException;
+import java.nio.charset.Charset;
+import java.security.InvalidAlgorithmParameterException;
+import java.security.InvalidKeyException;
+import java.security.NoSuchAlgorithmException;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.crypto.BadPaddingException;
+import javax.crypto.IllegalBlockSizeException;
+import javax.crypto.NoSuchPaddingException;
 import javax.inject.Inject;
 
 import net.reimone.ttloc.communication.ServerRequest;
+import net.reimone.ttloc.communication.TestHttpClient;
+import net.reimone.ttloc.communication.TripleDESEncryption;
 import net.reimone.ttloc.model.ttloc.TTLOCApplication;
 import net.reimone.ttloc.model.ttloc.User;
 
@@ -35,7 +45,23 @@ public class PreferencesChangeListener implements IPreferenceChangeListener {
 		User user = application.getUser();
 		String id = user.getId();
 		String password = user.getPassword();
+		String encryptedID = "";
+		String encryptedPassword = "";
+//		try {
+//			encryptedID = new String(TripleDESEncryption.encrypt(id), Charset.forName("UTF-8"));
+//			id = TripleDESEncryption.decrypt(encryptedID.getBytes());
+//			encryptedPassword = new String(TripleDESEncryption.encrypt(id));
+//			password = TripleDESEncryption.decrypt(encryptedPassword.getBytes());
+//		} catch (InvalidKeyException | NoSuchAlgorithmException
+//				| UnsupportedEncodingException | NoSuchPaddingException
+//				| InvalidAlgorithmParameterException
+//				| IllegalBlockSizeException | BadPaddingException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
 		Map<String, String> parameters = new HashMap<>();
+//		parameters.put("username", encryptedID);
+//		parameters.put("password", encryptedPassword);
 		parameters.put("username", id);
 		parameters.put("password", password);
 		
