@@ -154,9 +154,9 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 		if (newUser != user) {
 			NotificationChain msgs = null;
 			if (user != null)
-				msgs = ((InternalEObject)user).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - TtlocPackage.TTLOC_APPLICATION__USER, null, msgs);
+				msgs = ((InternalEObject)user).eInverseRemove(this, TtlocPackage.USER__APPLICATION, User.class, msgs);
 			if (newUser != null)
-				msgs = ((InternalEObject)newUser).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - TtlocPackage.TTLOC_APPLICATION__USER, null, msgs);
+				msgs = ((InternalEObject)newUser).eInverseAdd(this, TtlocPackage.USER__APPLICATION, User.class, msgs);
 			msgs = basicSetUser(newUser, msgs);
 			if (msgs != null) msgs.dispatch();
 		}
@@ -225,6 +225,22 @@ public class TTLOCApplicationImpl extends EObjectImpl implements TTLOCApplicatio
 		gameReportURL = newGameReportURL;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, TtlocPackage.TTLOC_APPLICATION__GAME_REPORT_URL, oldGameReportURL, gameReportURL));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	public NotificationChain eInverseAdd(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
+		switch (featureID) {
+			case TtlocPackage.TTLOC_APPLICATION__USER:
+				if (user != null)
+					msgs = ((InternalEObject)user).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - TtlocPackage.TTLOC_APPLICATION__USER, null, msgs);
+				return basicSetUser((User)otherEnd, msgs);
+		}
+		return super.eInverseAdd(otherEnd, featureID, msgs);
 	}
 
 	/**

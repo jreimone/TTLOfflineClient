@@ -20,6 +20,7 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link net.reimone.ttloc.model.ttloc.User#getPassword <em>Password</em>}</li>
  *   <li>{@link net.reimone.ttloc.model.ttloc.User#getId <em>Id</em>}</li>
  *   <li>{@link net.reimone.ttloc.model.ttloc.User#getGames <em>Games</em>}</li>
+ *   <li>{@link net.reimone.ttloc.model.ttloc.User#getApplication <em>Application</em>}</li>
  * </ul>
  * </p>
  *
@@ -121,5 +122,33 @@ public interface User extends EObject {
 	 * @generated
 	 */
 	EList<SpielType> getGames();
+
+	/**
+	 * Returns the value of the '<em><b>Application</b></em>' container reference.
+	 * It is bidirectional and its opposite is '{@link net.reimone.ttloc.model.ttloc.TTLOCApplication#getUser <em>User</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <p>
+	 * If the meaning of the '<em>Application</em>' container reference isn't clear,
+	 * there really should be more of a description here...
+	 * </p>
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Application</em>' container reference.
+	 * @see #setApplication(TTLOCApplication)
+	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getUser_Application()
+	 * @see net.reimone.ttloc.model.ttloc.TTLOCApplication#getUser
+	 * @model opposite="user" required="true" transient="false"
+	 * @generated
+	 */
+	TTLOCApplication getApplication();
+
+	/**
+	 * Sets the value of the '{@link net.reimone.ttloc.model.ttloc.User#getApplication <em>Application</em>}' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Application</em>' container reference.
+	 * @see #getApplication()
+	 * @generated
+	 */
+	void setApplication(TTLOCApplication value);
 
 } // User

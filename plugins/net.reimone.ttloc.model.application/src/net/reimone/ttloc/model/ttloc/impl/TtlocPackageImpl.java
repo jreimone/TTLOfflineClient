@@ -196,6 +196,15 @@ public class TtlocPackageImpl extends EPackageImpl implements TtlocPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public EReference getUser_Application() {
+		return (EReference)userEClass.getEStructuralFeatures().get(4);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	public TtlocFactory getTtlocFactory() {
 		return (TtlocFactory)getEFactoryInstance();
 	}
@@ -230,6 +239,7 @@ public class TtlocPackageImpl extends EPackageImpl implements TtlocPackage {
 		createEAttribute(userEClass, USER__PASSWORD);
 		createEAttribute(userEClass, USER__ID);
 		createEReference(userEClass, USER__GAMES);
+		createEReference(userEClass, USER__APPLICATION);
 	}
 
 	/**
@@ -266,7 +276,7 @@ public class TtlocPackageImpl extends EPackageImpl implements TtlocPackage {
 
 		// Initialize classes and features; add operations and parameters
 		initEClass(ttlocApplicationEClass, TTLOCApplication.class, "TTLOCApplication", !IS_ABSTRACT, !IS_INTERFACE, IS_GENERATED_INSTANCE_CLASS);
-		initEReference(getTTLOCApplication_User(), this.getUser(), null, "user", null, 0, 1, TTLOCApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getTTLOCApplication_User(), this.getUser(), this.getUser_Application(), "user", null, 0, 1, TTLOCApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTTLOCApplication_BaseURL(), ecorePackage.getEString(), "baseURL", null, 1, 1, TTLOCApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTTLOCApplication_GamesOfUserURL(), ecorePackage.getEString(), "gamesOfUserURL", null, 1, 1, TTLOCApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getTTLOCApplication_GameReportURL(), ecorePackage.getEString(), "gameReportURL", null, 1, 1, TTLOCApplication.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
@@ -276,6 +286,7 @@ public class TtlocPackageImpl extends EPackageImpl implements TtlocPackage {
 		initEAttribute(getUser_Password(), ecorePackage.getEString(), "password", null, 1, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEAttribute(getUser_Id(), ecorePackage.getEString(), "id", null, 1, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_UNSETTABLE, !IS_ID, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 		initEReference(getUser_Games(), theUserSpielePackage.getSpielType(), null, "games", null, 0, -1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
+		initEReference(getUser_Application(), this.getTTLOCApplication(), this.getTTLOCApplication_User(), "application", null, 1, 1, User.class, !IS_TRANSIENT, !IS_VOLATILE, IS_CHANGEABLE, !IS_COMPOSITE, !IS_RESOLVE_PROXIES, !IS_UNSETTABLE, IS_UNIQUE, !IS_DERIVED, IS_ORDERED);
 
 		// Create resource
 		createResource(eNS_URI);

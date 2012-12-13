@@ -26,6 +26,7 @@ import org.eclipse.emf.ecore.EObject;
 public interface TTLOCApplication extends EObject {
 	/**
 	 * Returns the value of the '<em><b>User</b></em>' containment reference.
+	 * It is bidirectional and its opposite is '{@link net.reimone.ttloc.model.ttloc.User#getApplication <em>Application</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <p>
 	 * If the meaning of the '<em>User</em>' containment reference isn't clear,
@@ -35,7 +36,8 @@ public interface TTLOCApplication extends EObject {
 	 * @return the value of the '<em>User</em>' containment reference.
 	 * @see #setUser(User)
 	 * @see net.reimone.ttloc.model.ttloc.TtlocPackage#getTTLOCApplication_User()
-	 * @model containment="true"
+	 * @see net.reimone.ttloc.model.ttloc.User#getApplication
+	 * @model opposite="application" containment="true"
 	 * @generated
 	 */
 	User getUser();

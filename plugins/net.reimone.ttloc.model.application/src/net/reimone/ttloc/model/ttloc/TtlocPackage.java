@@ -157,13 +157,22 @@ public interface TtlocPackage extends EPackage {
 	int USER__GAMES = 3;
 
 	/**
+	 * The feature id for the '<em><b>Application</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int USER__APPLICATION = 4;
+
+	/**
 	 * The number of structural features of the '<em>User</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int USER_FEATURE_COUNT = 4;
+	int USER_FEATURE_COUNT = 5;
 
 
 	/**
@@ -275,6 +284,17 @@ public interface TtlocPackage extends EPackage {
 	EReference getUser_Games();
 
 	/**
+	 * Returns the meta object for the container reference '{@link net.reimone.ttloc.model.ttloc.User#getApplication <em>Application</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Application</em>'.
+	 * @see net.reimone.ttloc.model.ttloc.User#getApplication()
+	 * @see #getUser()
+	 * @generated
+	 */
+	EReference getUser_Application();
+
+	/**
 	 * Returns the factory that creates the instances of the model.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -379,6 +399,14 @@ public interface TtlocPackage extends EPackage {
 		 * @generated
 		 */
 		EReference USER__GAMES = eINSTANCE.getUser_Games();
+
+		/**
+		 * The meta object literal for the '<em><b>Application</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference USER__APPLICATION = eINSTANCE.getUser_Application();
 
 	}
 

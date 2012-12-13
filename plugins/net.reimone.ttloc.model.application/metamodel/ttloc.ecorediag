@@ -84,10 +84,12 @@
     <children xmi:type="notation:Node" xmi:id="_7Hm-ENyIEeG-d8xrX-2Kdg" type="4012">
       <layoutConstraint xmi:type="notation:Location" xmi:id="_7Hm-EdyIEeG-d8xrX-2Kdg" x="10" y="10"/>
     </children>
-    <styles xmi:type="notation:ConnectorStyle" xmi:id="_7Hkh0dyIEeG-d8xrX-2Kdg" lineColor="4210752"/>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_7Hkh0dyIEeG-d8xrX-2Kdg" routing="Rectilinear" lineColor="4210752"/>
     <styles xmi:type="notation:FontStyle" xmi:id="_7Hkh0tyIEeG-d8xrX-2Kdg" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
     <element xmi:type="ecore:EReference" href="ttloc.ecore#//TTLOCApplication/user"/>
-    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7Hkh09yIEeG-d8xrX-2Kdg" points="[3, 21, 3, -162]$[3, 204, 3, 21]"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_7Hkh09yIEeG-d8xrX-2Kdg" points="[1, 31, 10, -109]$[1, 134, 10, -6]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MMd9JkVLEeK31YiAKIF68g" id="(0.20430107526881722,0.6352941176470588)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_MMd9J0VLEeK31YiAKIF68g" id="(0.11428571428571428,0.08235294117647059)"/>
   </edges>
   <edges xmi:type="notation:Edge" xmi:id="_fZA6oNyJEeG-d8xrX-2Kdg" type="3002" source="_6bHrgNyIEeG-d8xrX-2Kdg" target="_MuQrsNyJEeG-d8xrX-2Kdg">
     <children xmi:type="notation:Node" xmi:id="_fZElANyJEeG-d8xrX-2Kdg" type="4011">
@@ -102,5 +104,19 @@
     <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_fZA6o9yJEeG-d8xrX-2Kdg" points="[12, -1, -255, 18]$[268, -37, 1, -18]"/>
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fdxe0NyJEeG-d8xrX-2Kdg" id="(0.9142857142857143,0.10588235294117647)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_fdxe0dyJEeG-d8xrX-2Kdg" id="(0.2235294117647059,0.07983193277310924)"/>
+  </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_JwtFUEVLEeK31YiAKIF68g" type="3002" source="_6bHrgNyIEeG-d8xrX-2Kdg" target="_4kNNMNyIEeG-d8xrX-2Kdg">
+    <children xmi:type="notation:Node" xmi:id="_JwtFVEVLEeK31YiAKIF68g" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_JwtFVUVLEeK31YiAKIF68g" x="-10" y="-10"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_JwtFVkVLEeK31YiAKIF68g" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_JwtFV0VLEeK31YiAKIF68g" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_JwtFUUVLEeK31YiAKIF68g" routing="Rectilinear" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_JwtFUkVLEeK31YiAKIF68g" fontColor="4210752" fontName="Segoe UI" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="ttloc.ecore#//User/application"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_JwtFU0VLEeK31YiAKIF68g" points="[10, -6, 1, 134]$[10, -109, 1, 31]"/>
+    <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jw22UEVLEeK31YiAKIF68g" id="(0.11428571428571428,0.08235294117647059)"/>
+    <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_Jw22UUVLEeK31YiAKIF68g" id="(0.20430107526881722,0.6352941176470588)"/>
   </edges>
 </notation:Diagram>

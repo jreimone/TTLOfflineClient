@@ -2,7 +2,8 @@
 <ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="ttloc" nsURI="http://www.reimone.net/ttloc" nsPrefix="ttloc">
   <eClassifiers xsi:type="ecore:EClass" name="TTLOCApplication">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="user" eType="#//User" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="user" eType="#//User" containment="true"
+        eOpposite="#//User/application"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="baseURL" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="gamesOfUserURL" lowerBound="1"
@@ -17,5 +18,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="games" upperBound="-1"
         eType="ecore:EClass ../../net.reimone.ttloc.model.usergames/metamodel/UserSpiele.ecore#//SpielType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="application" lowerBound="1"
+        eType="#//TTLOCApplication" eOpposite="#//TTLOCApplication/user"/>
   </eClassifiers>
 </ecore:EPackage>
