@@ -1,38 +1,30 @@
 package net.reimone.ttloc.application.handlers;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import javax.inject.Inject;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.xmi.XMIResource;
 
 import net.reimone.ttloc.communication.ServerRequest;
 import net.reimone.ttloc.model.ttloc.TTLOCApplication;
 import net.reimone.ttloc.model.ttloc.User;
 
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.IPreferenceChangeListener;
-import org.eclipse.core.runtime.preferences.IEclipsePreferences.PreferenceChangeEvent;
-import org.osgi.service.prefs.Preferences;
+public class UserDataChangedHandler {
 
-public class PreferencesChangeListener implements IPreferenceChangeListener {
-
-	@Inject
-	private TTLOCApplication application;
-	
-	public PreferencesChangeListener(TTLOCApplication application) {
-		this.application = application;
-	}
-
-	@Override
-	public void preferenceChange(PreferenceChangeEvent event) {
-		Preferences node = event.getNode();
-		Object source = event.getSource();
-		String key = event.getKey();
-		Object newValue = event.getNewValue();
-		Object oldValue = event.getOldValue();
-		
+	public static void dataChanged(User user) {
+		TTLOCApplication application = user.getApplication();
+		Resource resource = application.eResource();
+		Map<String, String> options = new HashMap<String, String>();
+		options.put(XMIResource.OPTION_ENCODING, "UTF-8");
+		try {
+			resource.save(options);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 		String baseURL = application.getBaseURL();
 		String gamesOfUserURL = application.getGamesOfUserURL();
-		User user = application.getUser();
 		String id = user.getId();
 		String password = user.getPassword();
 		String encryptedID = "";
@@ -58,4 +50,5 @@ public class PreferencesChangeListener implements IPreferenceChangeListener {
 		String response = ServerRequest.sendPostRequest(baseURL, gamesOfUserURL, parameters);
 		System.out.println(response);
 	}
+
 }

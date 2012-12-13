@@ -34,6 +34,7 @@ import net.reimone.ttloc.model.ttloc.TtlocPackage.Literals;
 import org.eclipse.core.databinding.Binding;
 import org.eclipse.core.databinding.UpdateValueStrategy;
 import net.reimone.ttloc.application.databinding.NotEmptyValidator;
+import net.reimone.ttloc.application.handlers.UserDataChangedHandler;
 
 /**
  * Dialog for the preferences
@@ -52,6 +53,10 @@ public class UserPreferencesDialog extends TitleAreaDialog{
 	private Text txtUserId;
 	private Text txtPassword;
 	private Text txtName;
+
+	private String oldID;
+
+	private String oldPass;
 	
 	@Inject
 	public UserPreferencesDialog(@Named(IServiceConstants.ACTIVE_SHELL) Shell parentShell) {
@@ -62,6 +67,8 @@ public class UserPreferencesDialog extends TitleAreaDialog{
 		setTitle("Benutzereinstellungen");
 		setMessage("Geben Sie hier die Angaben Ihres Nutzeraccounts an.");
 		user = application.getUser();
+		oldID = user.getId();
+		oldPass = user.getPassword();
 		String errorMessage = "Die folgenden Daten müssen noch eingegben werden:";
 		boolean error = false;
 		if(user.getId() == null || "".equals(user.getId())){
@@ -115,14 +122,10 @@ public class UserPreferencesDialog extends TitleAreaDialog{
 
 	@Override
 	protected void okPressed() {
-		IEclipsePreferences preferences = ConfigurationScope.INSTANCE.getNode(ApplicationConstants.PREF_BASE);
-		preferences.put(ApplicationConstants.PREF_ID, user.getId());
-		preferences.put(ApplicationConstants.PREF_PASS, user.getPassword());
-		preferences.put(ApplicationConstants.PREF_NAME, user.getName());
-		try {
-			preferences.flush();
-		} catch (BackingStoreException e) {
-			e.printStackTrace();
+		String newID = user.getId();
+		String newPass = user.getPassword();
+		if(!newID.equals(oldID) || !newPass.equals(oldPass)){
+			UserDataChangedHandler.dataChanged(user);
 		}
 		super.okPressed();
 	}
