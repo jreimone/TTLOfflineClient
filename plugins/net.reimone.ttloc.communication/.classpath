@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
+	<classpathentry exported="true" kind="lib" path="libs/commons-codec-1.7.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/commons-logging-1.1.1.jar"/>
 	<classpathentry exported="true" kind="lib" path="libs/httpclient-4.2.1.jar" sourcepath="libs/httpcomponents-client-4.2.1-src.zip"/>
 	<classpathentry exported="true" kind="lib" path="libs/httpcore-4.2.1.jar" sourcepath="libs/httpcomponents-client-4.2.1-src.zip"/>
